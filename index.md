@@ -10,40 +10,41 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Sudhir Shrestha
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Dr. Sudhir Shrestha is an associate professor and the chair of the Engineering Department at SSU. He has a PHD and a bachelor's degree in Electrical Engineering. Prior to joining SSU, he was a visiting faculty at Miami University, OH and a research faculty at Purdue University in Indianapolis. He also has several years of postdoctoral and industry experience. 
 
-## Header 2
+## Areas of Interests
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+>Robotics
+>AI
+>Embedded computing
+Biomedical devices.
 
-### Header 3
+### Publications
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```
+ He has seven patents and more than 35 publications. He is the founder and director of the Intelligent Systems Lab at SSU. He is a Senior Member of IEEE.
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+#### Appointments
 
-#### Header 4
+*  2017 – Present: Sonoma State University
+**  Associate Professor, 2021 – Present
+**  School Chair, 2024 - 2024, School of Engineering and Computer Science (ECS)
+**  Department Chair, 2022  – 2024, Department of Engineering
+**  Assistant Professor, 2017 – 2021
+*  2016 – 2017:  Miami University, Oxford, OH
+**  Visiting Assistant Professor, Department of Electrical and Computer Engineering
+*  2009 – 2016: Electrical and Computer Engineering, Purdue Univeristy in Indianapolis
+**  Assistant Research Professor, 2011 – 2016
+**  Postdoc, 2009 – 2011
+*  2004 – 2005: Digital Link, Kathmandu, Nepal
+**  Founder, Network, Systems & Hardware
+*  2003 – 2004: Vianet Communications, Kathmandu, Nepal 
+**  Network, Systems & Hardware
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
+##### Education
 
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
