@@ -1,5 +1,5 @@
-title: Dinky theme
-description: Dinky is a red hot theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Prof. Sudhir Shrestha
+description: Professor of Electrical Engineering, California State University SSU
+show_downloads: false
+google_analytics: true
 theme: jekyll-theme-dinky
