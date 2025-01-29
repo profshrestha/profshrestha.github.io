@@ -19,7 +19,7 @@ Dr. Sudhir Shrestha is an associate professor and the chair of the Engineering D
 >Robotics
 >AI
 >Embedded computing
-Biomedical devices.
+>Biomedical devices.
 
 ### Publications
 
