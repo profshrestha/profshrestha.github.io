@@ -35,12 +35,12 @@ He has seven patents and more than 35 publications. He is the founder and direct
 *  2016 – 2017:  Miami University, Oxford, OH
    * Visiting Assistant Professor, Department of Electrical and Computer Engineering
 *  2009 – 2016: Electrical and Computer Engineering, Purdue Univeristy in Indianapolis
-  *  Assistant Research Professor, 2011 – 2016
+   * Assistant Research Professor, 2011 – 2016
   *  Postdoc, 2009 – 2011
 *  2004 – 2005: Digital Link, Kathmandu, Nepal
-  * Founder, Network, Systems & Hardware
+   * Founder, Network, Systems & Hardware
 *  2003 – 2004: Vianet Communications, Kathmandu, Nepal
-  *  Network, Systems & Hardware
+   * Network, Systems & Hardware
 
 ##### Education
 
