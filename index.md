@@ -10,7 +10,7 @@ layout: default
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. -->
 
-# Sudhir Shrestha
+# Dr. Sudhir Shrestha
 
 Dr. Sudhir Shrestha is an Associate Professor of Electrical Engineering at California State University, Sonoma State (SSU). He holds a Ph.D. and a bachelor's degree in Electrical Engineering. Prior to joining SSU, he was a visiting faculty member at Miami University in Ohio and a research faculty member at Purdue University in Indianapolis. He also has several years of postdoctoral and industry experience. 
 
