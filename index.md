@@ -30,8 +30,8 @@ He has seven patents and more than 35 publications. He is tenured professor at S
 
 *  2017 – Present: Sonoma State University
     * Associate Professor, 2021 – Present
-    * School Chair, 2024 - 2024, School of Engineering and Computer Science (ECS)
-    * Department Chair, 2022  – 2024, Department of Engineering
+    * Chair, 2024 - 2024, School of Engineering and Computer Science (ECS)
+    * Chair, 2022  – 2024, Department of Engineering
     * Assistant Professor, 2017 – 2021
 *  2016 – 2017:  Miami University, Oxford, OH
    * Visiting Assistant Professor, Department of Electrical and Computer Engineering
