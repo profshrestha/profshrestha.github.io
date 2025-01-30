@@ -14,8 +14,9 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 Dr. Sudhir Shrestha is an Associate Professor of Electrical Engineering at California State University, Sonoma State (SSU). He holds a Ph.D. and a bachelor's degree in Electrical Engineering. Prior to joining SSU, he was a visiting faculty member at Miami University in Ohio and a research faculty member at Purdue University in Indianapolis. He also has several years of postdoctoral and industry experience. 
 
-## Areas of Interests
+## Areas of Expertise
 
+>Sensing Breath VOCs for Diabetese, 
 >Robotics,
 >AI,
 >Embedded computing, and
@@ -23,7 +24,7 @@ Dr. Sudhir Shrestha is an Associate Professor of Electrical Engineering at Calif
 
 ### Highlights
 
-He has seven patents and more than 35 publications. He is the founder and director of the SSU Intelligent Systems Lab. He is tenured professor at SSU and a Senior Member of IEEE. He has been received NSF and CSU Biotech faculty research awards. 
+He has seven patents and more than 35 publications. He is tenured professor at SSU and a Senior Member of IEEE. He has been received NSF and CSU Biotech faculty research awards. He is the founder and director of the SSU Intelligent Systems Lab.  
 
 #### Appointments
 
