@@ -77,7 +77,7 @@ He has seven patents and more than 35 publications. He is tenured professor at S
 ### Patents:
 
 *  A Device to Collect Breath Data from Type-2 Diabetes Patients in Real-Life Situations. US Patent Application  17508877 (Oct 22, 2021)
-Volatile Organic Compound Sensors, and Methods of Making and Using the Same. US 10107827 B1 (Published: Oct 22, 2018)
+*  Volatile Organic Compound Sensors, and Methods of Making and Using the Same. US 10107827 B1 (Published: Oct 22, 2018)
 *  Low Power Wireless Sensor System with Ring Oscillator and Sensors for Use in Monitoring of Physiological Data. US 2015 0295562 A1 (Published: Oct 14, 2015)
 *  Wearable Microstrip Antennas for Skin Placement for Biomedical Applications. US 9044158 B2 (Published: Jun 1, 2015)
 *  Paper-Based Lithium-Ion Batteries. US 9548496 B2 (Published: Jan 16, 2017), US 9531010 B2 (Published: Oct 17, 2016), US 9472832 B2
