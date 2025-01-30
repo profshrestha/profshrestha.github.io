@@ -86,7 +86,7 @@ He has seven patents and more than 35 publications. He is tenured professor at S
 
 ### Intelligent Systems Lab (ISL)
 
-[ISL](profshrestha.github.io/images/isl_1.jpg)
+![ISL](images/isl_1.jpg)
 
 <!-- ### And a nested list:
 
