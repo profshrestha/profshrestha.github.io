@@ -12,13 +12,13 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Sudhir Shrestha
 
-Dr. Sudhir Shrestha is an associate professor and the chair of the Engineering Department at SSU. He has a PHD and a bachelor's degree in Electrical Engineering. Prior to joining SSU, he was a visiting faculty at Miami University, OH and a research faculty at Purdue University in Indianapolis. He also has several years of postdoctoral and industry experience. 
+Dr. Sudhir Shrestha is an Associate Professor of Electrical Engineering at California State University, Sonoma State (SSU). He holds a Ph.D. and a bachelor's degree in Electrical Engineering. Prior to joining SSU, he was a visiting faculty member at Miami University in Ohio and a research faculty member at Purdue University in Indianapolis. He also has several years of postdoctoral and industry experience. 
 
 ## Areas of Interests
 
->Robotics
->AI
->Embedded computing
+>Robotics,
+>AI,
+>Embedded computing, and
 >Biomedical devices.
 
 ### Publications
