@@ -84,6 +84,10 @@ He has seven patents and more than 35 publications. He is tenured professor at S
 *  Layer-by-Layer Assembled Nanoparticles Based Thin Films for Solar Cells and Other Applications. US 9444003 B2 (Published: Sep 12, 2016), UWO 2012 015989 A3 (Published: May 9, 2012)
 *  Transmission Delay Based RFID Tag. US 8179231 B1 (Published: May 14, 2012), US 8736452 B1 (Published: May 26, 2014 Filed: Mar 12, 2008)
 
+### Intelligent Systems Lab (ISL)
+
+[ISL](profshrestha.github.io/images/isl_1.jpg)
+
 <!-- ### And a nested list:
 
 - level 1 item
@@ -100,11 +104,11 @@ He has seven patents and more than 35 publications. He is tenured professor at S
   - level 2 item
 - level 1 item
 
--->
+
 ### Intelligent Systems Lab (ISL)
 
 ![ISL](profshrestha.github.io/images/isl_1.jpg)
-<!--
+
 ### Large image
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
