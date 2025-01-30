@@ -88,6 +88,8 @@ He has seven patents and more than 35 publications. He is tenured professor at S
 
 ![ISL](images/isl_1.jpg)
 
+![Dr. Shrestha](images/s_shresthabrennanspark_298.jpg) 
+
 <!-- ### And a nested list:
 
 - level 1 item
