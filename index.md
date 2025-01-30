@@ -101,9 +101,9 @@ Volatile Organic Compound Sensors, and Methods of Making and Using the Same. US 
 - level 1 item
 
 ### Small image
-
+-->
 ![ISL](profshrestha.github.io/images/isl_1.jpg)
-
+<!--
 ### Large image
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
