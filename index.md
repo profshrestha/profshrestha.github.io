@@ -102,7 +102,7 @@ Volatile Organic Compound Sensors, and Methods of Making and Using the Same. US 
 
 ### Small image
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![ISL](profshrestha.github.io/images/isl_1.jpg)
 
 ### Large image
 
