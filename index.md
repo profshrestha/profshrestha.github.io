@@ -21,9 +21,9 @@ Dr. Sudhir Shrestha is an Associate Professor of Electrical Engineering at Calif
 >Embedded computing, and
 >Biomedical devices.
 
-### Publications
+### Highlights
 
-He has seven patents and more than 35 publications. He is the founder and director of the Intelligent Systems Lab at SSU. He is a Senior Member of IEEE.
+He has seven patents and more than 35 publications. He is the founder and director of the SSU Intelligent Systems Lab. He is tenured professor at SSU and a Senior Member of IEEE. He has been received NSF and CSU Biotech faculty research awards. 
 
 #### Appointments
 
