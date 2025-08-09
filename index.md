@@ -48,19 +48,6 @@ He holds seven patents and has more than 35 publications. He is a tenured profes
 1.  PhD in Engineering (Electrical and Micro/Nanoscale Systems), Louisiana Tech University, 2009
 2.  BE in Electrical and Electronics Engineering, Kathmandu University, 2003
 
-<!-- ###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * * -->
-
 ### Selected Publications & Presentations:
 
 *   M. Boubin and S. Shrestha, “Microcontroller Implementation of Support Vector Machine for Detecting Blood Glucose Levels using Breath Volatile Organic Compounds,” Applied Science, vol. 19, no. 10, pp. 1-9, May 2019.
@@ -86,7 +73,7 @@ He holds seven patents and has more than 35 publications. He is a tenured profes
 
 ### Intelligent Systems Lab (ISL)
 
-![ISL](images/isl_1.jpg)
+<!-- Removed the ISL image here -->
 
 <!-- ### And a nested list:
 
@@ -113,25 +100,4 @@ He holds seven patents and has more than 35 publications. He is a tenured profes
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
--->
+...
