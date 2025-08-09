@@ -107,7 +107,7 @@ He holds seven patents and has more than 35 publications. He is a tenured profes
 
 ### Small image
 
-![ISL](images/isl_1.jpg)
+<!-- ![ISL](images/isl_1.jpg) -->
 
 ### Large image
 
