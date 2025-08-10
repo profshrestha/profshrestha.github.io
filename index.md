@@ -4,19 +4,30 @@ layout: default
 
 # Dr. Sudhir Shrestha
 
-Dr. Sudhir Shrestha is an Associate Professor of Electrical Engineering at California State University, Sonoma State (SSU). He holds a Ph.D. and a bachelor's degree in Electrical Engineering. Prior to joining SSU, he held academic and research positions at Miami University (OH) and Purdue University in Indianapolis, and held technical roles in the private sector in Nepal.
+Dr. Shrestha is a tenured Associate Professor of Electrical Engineering at Sonoma State University, a campus of the California State University system. He holds both a Ph.D. and a bachelor’s degree in Electrical Engineering. Previously, he held research and academic positions at Purdue University in Indianapolis and Miami University in Ohio. He also founded an internet service and hardware company and held technical roles in the private sector in Nepal.
 
 ## Areas of Expertise
 
-- Sensing Breath VOCs for Diabetes
+- VOC Sensing and Breath VOC Sensors
 - Robotics
 - Artificial Intelligence (AI)
-- Embedded Computing
-- Biomedical Devices
+- Embedded Systems
+- Leadership, Project Management, and Academic Adminstration
 
 ### Highlights
 
 He holds seven patents and has authored more than 35 publications. Dr. Shrestha is a tenured professor at SSU and a Senior Member of IEEE. He has received research awards, including NSF Smart and Connected Health and CSU Biotech Faculty Research grants.
+
+### Current Projects
+
+Breath VOC Sensors:
+Dr. Shrestha's team developing a breath-based VOC sensor capable of predicting diseases and health conditions. This work has resulted in a patent and several peer-reviewed publications detailing the design and findings. His team have successfully completed a pilot clinical study, with both the results and methodology available in the public domain.
+
+Robotics and AI:
+Dr. Shrestha's team is exploring innovative frontiers in robotics and artificial intelligence through multiple research projects. His team has published several findings and continue to expand our contributions to the field. He also founded a robotics course and lab at Sonoma State University, which he currently teaches.
+
+Intelligent Systems Lab:
+Founded in 2017, the Intelligent Systems Lab focuses on the design and development of intelligent hardware and software systems. The lab has produced a patent, numerous publications and technical reports, received multiple grants, awards, and recognitions, and mentored students across graduate, undergraduate, and K–12 levels.
 
 #### Appointments
 
