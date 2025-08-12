@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<video src="images/isl_banner_video.mp4" autoplay loop muted playsinline style="width:100%; display:block;" preload="auto"></video>
+
 # Dr. Sudhir Shrestha
 
 Dr. Shrestha is a tenured Associate Professor of Electrical Engineering at Sonoma State University, a campus of the California State University system. He holds both a Ph.D. and a bachelor’s degree in Electrical Engineering. Previously, he held research and academic positions at Purdue University in Indianapolis and Miami University in Ohio. He also founded an internet service and hardware company and held technical roles in the private sector in Nepal.
