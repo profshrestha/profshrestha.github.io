@@ -84,7 +84,7 @@ Founded in 2017, the Intelligent Systems Lab focuses on the design and developme
 The Intelligent Systems Lab (ISL) at SSU, led by Dr. Shrestha, focuses on research in robotics, AI, smart sensing, embedded systems, and biomedical device innovation. <!-- For more information, visit the [ISL homepage](#) (add link). -->
 
 <!-- To display the ISL image, uncomment the following line and provide the correct path if needed -->
-![ISL Lab](images/SSUISL_v2.jpg)
+<!-- ![ISL Lab](images/SSUISL_v2.jpg)-->
 
 <!-- Example: For a large image, use the following -->
 <!-- ![Branching](https://guides.github.com/activities/hello-world/branching.png) -->
