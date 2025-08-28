@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EE Statistics — 20‑Question Quiz</title>
+  <style>
+    :root{
+      --indigo:#4f46e5; --purple:#7c3aed; --slate:#1e293b; --muted:#64748b;
+      --bg:#f8fafc; --panel:#ffffff; --success:#16a34a; --danger:#dc2626; --warn:#d97706;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{width:100%;max-width:920px;background:var(--panel);border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.12);overflow:hidden}
+    header{background:linear-gradient(135deg,var(--indigo),var(--purple));color:#fff;padding:28px 28px 24px;text-align:center}
+    header h1{margin:0 0 6px;font-size:1.9rem;font-weight:800}
+    header p{margin:0;opacity:.9}
+    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:18px 22px;background:#eef2ff;border-bottom:1px solid #e2e8f0;flex-wrap:wrap}
+    .progress{display:flex;align-items:center;gap:12px}
+    .bar{width:260px;max-width:56vw;height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+    .fill{height:100%;width:0;background:linear-gradient(90deg,var(--indigo),var(--purple));transition:width .25s ease}
+    .counter{font-weight:700;color:var(--indigo)}
+    .btns{display:flex;gap:10px;flex-wrap:wrap}
+    button{appearance:none;border:none;border-radius:12px;background:var(--indigo);color:#fff;font-weight:700;padding:10px 16px;cursor:pointer;transition:transform .15s ease,background .15s ease}
+    button[disabled]{background:#a1a1aa;cursor:not-allowed}
+    button.secondary{background:#475569}
+    button.success{background:var(--success)}
+    button.warn{background:var(--warn)}
+    button:hover{transform:translateY(-1px)}
+
+    main{padding:26px 22px}
+    .card{background:var(--bg);border:1px solid #e5e7eb;border-radius:16px;padding:20px}
+    .topic{display:inline-block;background:var(--indigo);color:#fff;border-radius:16px;padding:6px 12px;font-size:.82rem;font-weight:800;margin-bottom:12px}
+    .q{font-size:1.25rem;font-weight:800;color:var(--slate);line-height:1.35;margin:8px 0 16px}
+    .choices{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0}
+    .choice{display:flex;align-items:center;gap:10px;border:1px solid #e5e7eb;background:#fff;border-radius:12px;padding:12px 14px;cursor:pointer;transition:border .15s ease,box-shadow .15s ease}
+    .choice:hover{box-shadow:0 4px 14px rgba(0,0,0,.06)}
+    .choice input{accent-color:var(--indigo);transform:scale(1.2)}
+    .choice.correct{border-color:var(--success)}
+    .choice.incorrect{border-color:var(--danger)}
+    .feedback{min-height:28px;margin-top:8px;font-weight:700}
+    .ok{color:var(--success)}
+    .bad{color:var(--danger)}
+    .hint{color:#065f46;background:#ecfdf5;border:1px solid #bbf7d0;border-radius:12px;padding:10px 12px;margin-top:10px;display:none}
+
+    .stats{display:flex;justify-content:space-around;gap:12px;padding:18px;background:#f1f5f9;border-top:1px solid #e5e7eb}
+    .stat{text-align:center}
+    .stat .val{font-size:1.4rem;font-weight:900;color:var(--indigo)}
+    .stat .lab{font-size:.85rem;color:var(--muted)}
+
+    @media(min-width:720px){ .choices{grid-template-columns:1fr 1fr} }
+    @media(max-width:480px){ header h1{font-size:1.5rem} .bar{width:52vw} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>EE Statistics — 20‑Question Quiz</h1>
+      <p>Multiple‑choice flashcards: one question at a time.</p>
+    </header>
+
+    <div class="controls">
+      <div class="progress">
+        <div class="bar"><div class="fill" id="fill"></div></div>
+        <span class="counter" id="counter">1 / 20</span>
+      </div>
+      <div class="btns" role="group" aria-label="Quiz controls">
+        <button class="secondary" id="prevBtn">← Previous</button>
+        <button id="checkBtn">Check Answer</button>
+        <button class="success" id="nextBtn" disabled>Next →</button>
+        <button class="warn" id="hintBtn">Show Hint</button>
+        <button class="secondary" id="shuffleBtn" title="Ctrl+R">Shuffle</button>
+        <button class="secondary" id="restartBtn">Restart</button>
+      </div>
+    </div>
+
+    <main>
+      <div class="card" aria-live="polite">
+        <div class="topic" id="topic">General</div>
+        <div class="q" id="question">Loading…</div>
+        <div class="choices" id="choices"></div>
+        <div class="feedback" id="feedback"></div>
+        <div class="hint" id="hint"></div>
+      </div>
+    </main>
+
+    <div class="stats">
+      <div class="stat"><span class="val" id="score">0</span><div class="lab">Correct</div></div>
+      <div class="stat"><span class="val" id="attempts">0</span><div class="lab">Attempts</div></div>
+      <div class="stat"><span class="val" id="remaining">20</span><div class="lab">Remaining</div></div>
+    </div>
+  </div>
+
+  <script>
+    // 20-question bank (short, web-friendly)
+    const QUIZ = [
+      {t:"Central Tendency", q:"When is the median preferred to the mean?", c:["With outliers or skew","Only for normal data","When n is large","When units differ"], a:0, h:"Median is robust to extremes."},
+      {t:"Formulas", q:"Sample mean equals", c:["x̄ = Σxᵢ / n","x̄ = Σ(xᵢ − x̄)","σ = √(Σxᵢ / n)","μ = Σxᵢ / (n−1)"], a:0, h:"Sum values and divide by n."},
+      {t:"Weighted Means", q:"Weighted mean formula", c:["Σxᵢ / n","Σwᵢxᵢ / Σwᵢ","Σxᵢ / Σwᵢ","Σwᵢ / Σxᵢ"], a:1, h:"Weights appear in numerator and denominator."},
+      {t:"Outliers", q:"1.5×IQR rule flags outliers", c:["|x−x̄| > 2s","Outside Q1−1.5IQR or Q3+1.5IQR","r < −0.5","p < 0.05"], a:1, h:"Uses quartiles, not mean/SD."},
+      {t:"Transforms", q:"Multiply all data by k. SD becomes", c:["k²·s","|k|·s","s/k","s"], a:1, h:"SD scales linearly with |k|."},
+      {t:"Transforms", q:"Add constant c to all data. Variance becomes", c:["Var + c","Var × c","Unchanged","Var²"], a:2, h:"Shifts do not change spread."},
+      {t:"Standardization", q:"Z‑score (sample)", c:["(x − x̄) / s","(x − μ) / σ","x / s","x̄ / s"], a:0, h:"Center by sample mean; scale by s."},
+      {t:"Empirical Rule", q:"Within ±2 SD we expect", c:["68%","75%","95%","99.7%"], a:2, h:"68–95–99.7."},
+      {t:"Chebyshev", q:"Within 2 SD at least", c:["68%","75%","90%","95%"], a:1, h:"Distribution‑free bound."},
+      {t:"Association", q:"Correlation r ≈ 0 implies", c:["No linear relation","No relation at all","Perfect curve","Causation"], a:0, h:"Could still be nonlinear."},
+      {t:"Sampling", q:"Standard error of the mean (SEM)", c:["s / √n","s","s²","√(s / n)"], a:0, h:"Mean’s sampling variability."},
+      {t:"Variance", q:"Sample variance uses", c:["n","n−1","n+1","N"], a:1, h:"Bessel’s correction."},
+      {t:"Mixtures", q:"Combining groups with different means", c:["SD usually increases","SD decreases","SD unchanged","Only median changes"], a:0, h:"Between‑group spread adds."},
+      {t:"Quartiles", q:"IQR equals", c:["Q2 − Q1","Q3 − Q1","Q4 − Q1","Q2 − Q0"], a:1, h:"Middle 50% range."},
+      {t:"Robustness", q:"Outliers affect mean vs median", c:["Mean less affected","Median moves more","Mean more affected","Same effect"], a:2, h:"Median is robust."},
+      {t:"Units", q:"Convert V→mV. Mean and SD", c:["×1000 both","×1000 mean only","×1000 SD only","÷1000 both"], a:0, h:"Linear factor applies to both."},
+      {t:"Boxplots", q:"Fences are located at", c:["x̄ ± 2s","Q1−1.5IQR and Q3+1.5IQR","Q2 ± IQR","Min and Max"], a:1, h:"Same as 1.5×IQR rule."},
+      {t:"Notation", q:"Population variance symbol", c:["s²","σ²","μ","x̄"], a:1, h:"Greek letter for population."},
+      {t:"Skew", q:"Right‑skewed data: mean vs median", c:["Mean < Median","Mean = Median","Mean > Median","Unrelated"], a:2, h:"Tail pulls mean right."},
+      {t:"Median", q:"Median for even n is", c:["Middle value","Mean of two middles","Weighted middle","Undefined"], a:1, h:"Average the central pair."}
+    ];
+
+    let idx = 0, score = 0, attempted = 0, answered = false, chosen = null;
+
+    const els = {
+      fill: document.getElementById('fill'),
+      counter: document.getElementById('counter'),
+      topic: document.getElementById('topic'),
+      question: document.getElementById('question'),
+      choices: document.getElementById('choices'),
+      feedback: document.getElementById('feedback'),
+      hint: document.getElementById('hint'),
+      score: document.getElementById('score'),
+      attempts: document.getElementById('attempts'),
+      remaining: document.getElementById('remaining'),
+      prevBtn: document.getElementById('prevBtn'),
+      nextBtn: document.getElementById('nextBtn'),
+      checkBtn: document.getElementById('checkBtn'),
+      hintBtn: document.getElementById('hintBtn'),
+      shuffleBtn: document.getElementById('shuffleBtn'),
+      restartBtn: document.getElementById('restartBtn'),
+    };
+
+    function render(){
+      const item = QUIZ[idx];
+      els.topic.textContent = item.t || 'General';
+      els.question.textContent = `${idx+1}. ${item.q}`;
+      els.choices.innerHTML = '';
+      els.feedback.textContent = '';
+      els.feedback.className = 'feedback';
+      els.hint.style.display = 'none';
+      els.hint.textContent = item.h || '';
+      answered = false; chosen = null; els.nextBtn.disabled = true;
+
+      item.c.forEach((text,i)=>{
+        const opt = document.createElement('label');
+        opt.className = 'choice';
+        opt.innerHTML = `<input type="radio" name="opt" value="${i}" /> <span>${String.fromCharCode(65+i)}.</span> <span>${text}</span>`;
+        opt.addEventListener('click', ()=> select(i, opt));
+        els.choices.appendChild(opt);
+      });
+
+      els.counter.textContent = `${idx+1} / ${QUIZ.length}`;
+      els.fill.style.width = `${((idx)/QUIZ.length)*100}%`;
+      els.prevBtn.disabled = idx === 0;
+      updateStats();
+    }
+
+    function select(i, opt){
+      if(answered) return; // lock after checking
+      chosen = i;
+      // Visually mark selection (radio already checked, but highlight card border)
+      [...els.choices.children].forEach(ch => ch.style.borderColor = '#e5e7eb');
+      opt.style.borderColor = '#94a3b8';
+    }
+
+    function check(){
+      if(answered || chosen === null){
+        els.feedback.className = 'feedback bad';
+        els.feedback.textContent = 'Select an option first.';
+        return;
+      }
+      const item = QUIZ[idx];
+      attempted++;
+      const nodes = [...els.choices.children];
+      nodes[item.a].classList.add('correct');
+      if(chosen === item.a){
+        score++;
+        els.feedback.className = 'feedback ok';
+        els.feedback.textContent = 'Correct!';
+      } else {
+        nodes[chosen].classList.add('incorrect');
+        els.feedback.className = 'feedback bad';
+        els.feedback.textContent = 'Not quite. Review the hint and try the next.';
+      }
+      answered = true;
+      els.nextBtn.disabled = idx === QUIZ.length - 1; // enable except on last
+      updateStats();
+    }
+
+    function next(){ if(idx < QUIZ.length - 1){ idx++; render(); } finishIfLast(); }
+    function prev(){ if(idx > 0){ idx--; render(); } }
+
+    function toggleHint(){
+      els.hint.style.display = (els.hint.style.display === 'none') ? 'block' : 'none';
+    }
+
+    function shuffle(){
+      // Fisher–Yates
+      for(let i=QUIZ.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [QUIZ[i], QUIZ[j]] = [QUIZ[j], QUIZ[i]];
+      }
+      idx = 0; score = 0; attempted = 0; answered = false; chosen = null;
+      render();
+    }
+
+    function restart(){ idx = 0; score = 0; attempted = 0; answered = false; chosen = null; render(); }
+
+    function updateStats(){
+      els.score.textContent = score;
+      els.attempts.textContent = attempted;
+      els.remaining.textContent = Math.max(QUIZ.length - (idx+1), 0);
+    }
+
+    function finishIfLast(){
+      if(idx === QUIZ.length - 1){
+        els.fill.style.width = `${((idx)/QUIZ.length)*100}%`;
+      }
+    }
+
+    // Wire up controls
+    els.prevBtn.addEventListener('click', prev);
+    els.nextBtn.addEventListener('click', next);
+    els.checkBtn.addEventListener('click', check);
+    els.hintBtn.addEventListener('click', toggleHint);
+    els.shuffleBtn.addEventListener('click', shuffle);
+    els.restartBtn.addEventListener('click', restart);
+
+    // Keyboard shortcuts: 1–4 selects; Enter/Space checks; arrows nav; Ctrl+R shuffles
+    document.addEventListener('keydown', (e)=>{
+      if(e.ctrlKey && (e.key === 'r' || e.key === 'R')){ e.preventDefault(); shuffle(); return; }
+      if(['1','2','3','4'].includes(e.key)){
+        const ix = parseInt(e.key,10) - 1;
+        const lab = els.choices.children[ix];
+        if(lab) lab.click();
+      }
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); check(); }
+      if(e.key === 'ArrowRight'){ e.preventDefault(); next(); }
+      if(e.key === 'ArrowLeft'){ e.preventDefault(); prev(); }
+    });
+
+    // Touch swipe (left/right)
+    let sx=0, sy=0;
+    document.addEventListener('touchstart', e=>{ sx = e.touches[0].clientX; sy = e.touches[0].clientY; });
+    document.addEventListener('touchend', e=>{
+      const ex = e.changedTouches[0].clientX; const ey = e.changedTouches[0].clientY;
+      const dx = ex - sx; const dy = ey - sy;
+      if(Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 48){ if(dx < 0) next(); else prev(); }
+    });
+
+    // Start
+    render();
+  </script>
+</body>
+</html>
 
