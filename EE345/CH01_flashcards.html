@@ -1,9 +1,161 @@
-<!DOCTYPE html>
+const flashcards = [
+            {
+                category: "Central Tendency",
+                question: "When should you use median instead of mean?",
+                formula: "",
+                answer: "<strong>Use median when:</strong><br>• Outliers are present<br>• Data is skewed<br>• You need robust central measure<br><div class='card-example'><strong>EE Example:</strong> Packet latencies where 95% are under 50ms but 5% exceed 500ms → Use median because extreme values don't affect it</div>"
+            },
+            {
+                category: "Central Tendency", 
+                question: "What is the formula for sample mean?",
+                formula: "x̄ = (x₁ + x₂ + ⋯ + xₙ) / n",
+                answer: "<strong>Sample Mean Formula:</strong><br>• Sum all values and divide by sample size<br>• Sensitive to outliers<br>• Most common measure of central tendency<br><div class='card-example'><strong>Example:</strong> Voltages: 3.1, 3.3, 3.2 V<br>Mean = (3.1 + 3.3 + 3.2)/3 = 3.2 V</div>"
+            },
+            {
+                category: "Weighted Means",
+                question: "How do you combine means from groups with different sample sizes?",
+                formula: "x̄<sub>combined</sub> = (n₁x̄₁ + n₂x̄₂) / (n₁ + n₂)",
+                answer: "<strong>Combined Mean:</strong><br>• Weight each mean by its sample size<br>• NOT the simple average of means<br>• Larger groups have more influence<br><div class='card-example'><strong>EE Example:</strong> Lot A: n=25, mean=1.02kΩ<br>Lot B: n=15, mean=0.98kΩ<br>Combined = (25×1.02 + 15×0.98)/40 = 1.005kΩ</div>"
+            },
+            {
+                category: "Variability",
+                question: "What is the sample variance formula?",
+                formula: "s² = Σ(xᵢ - x̄)² / (n-1)",
+                answer: "<strong>Sample Variance:</strong><br>• Measures spread around the mean<br>• Uses n-1 for degrees of freedom<br>• Units are squared<br>• Standard deviation is √variance<br><div class='card-example'><strong>EE Example:</strong> ADC readings vary by ±2 counts<br>s² = 4 counts², s = 2 counts</div>"
+            },
+            {
+                category: "Variability",
+                question: "How does standard deviation change with linear transformations?",
+                formula: "Add c: New SD = s<br>Multiply by k: New SD = |k|×s",
+                answer: "<strong>Linear Transformation Rules:</strong><br>• Adding constant: SD unchanged<br>• Multiplying by constant: SD scales by |k|<br>• Mean changes for both operations<br><div class='card-example'><strong>EE Example:</strong> Current in mA has SD = 0.1mA<br>Convert to μA (×1000): New SD = 100μA</div>"
+            },
+            {
+            {
+                category: "Quartiles",
+                question: "What is the IQR and how is it calculated?",
+                formula: "IQR = Q₃ - Q₁",
+                answer: "<strong>Interquartile Range:</strong><br>• Range of middle 50% of data<br>• Q₁ = 25th percentile, Q₃ = 75th percentile<br>• Robust measure of spread<br>• Not affected by outliers<br><div class='card-example'><strong>EE Example:</strong> Leakage currents: Q₁ = 2.4nA, Q₃ = 3.1nA<br>IQR = 3.1 - 2.4 = 0.7nA</div>"
+            },
+            {
+                category: "Outlier Detection",
+                question: "What is the 1.5×IQR rule for outliers?",
+                formula: "Outliers: < Q₁ - 1.5×IQR or > Q₃ + 1.5×IQR",
+                answer: "<strong>1.5×IQR Outlier Rule:</strong><br>• Values beyond Q₁ - 1.5×IQR (lower fence)<br>• Values beyond Q₃ + 1.5×IQR (upper fence)<br>• More robust than mean ± 2SD<br><div class='card-example'><strong>EE Example:</strong> Q₁ = 2.4nA, Q₃ = 3.1nA, IQR = 0.7nA<br>Upper fence = 3.1 + 1.5(0.7) = 4.15nA<br>15.8nA is an outlier!</div>"
+            },
+            {
+                category: "Association",
+                question: "What are the main types of association in scatterplots?",
+                formula: "",
+                answer: "<strong>Types of Association:</strong><br>• <strong>Positive Linear:</strong> As x↑, y↑ linearly<br>• <strong>Negative Linear:</strong> As x↑, y↓ linearly<br>• <strong>Nonlinear:</strong> Curved relationship<br>• <strong>No Association:</strong> Random scatter<br><div class='card-example'><strong>EE Example:</strong> V vs I for resistor shows positive linear (Ohm's law)<br>Outliers may indicate heating or damage</div>"
+            },
+            {
+                category: "Formulas",
+                question: "What is the weighted mean formula?",
+                formula: "x̄<sub>w</sub> = (w₁x₁ + w₂x₂ + ⋯ + wₖxₖ) / (w₁ + w₂ + ⋯ + wₖ)",
+                answer: "<strong>Weighted Mean:</strong><br>• Each value multiplied by its weight<br>• Divide by sum of weights<br>• Used when values have different importance<br><div class='card-example'><strong>EE Example:</strong> Component costs weighted by quantity:<br>100 resistors @ $0.05, 50 caps @ $0.10<br>Weighted mean = (100×0.05 + 50×0.10)/150</div>"
+            },
+            {
+                category: "EE Applications",
+                question: "Power measurements: 12.1, 12.3, 12.0, 37.8, 12.2 mW. Which central measure is better?",
+                formula: "",
+                answer: "<strong>Median is better (12.2 mW)</strong><br>• Mean = 17.3 mW (inflated by outlier)<br>• 37.8 mW is likely a defective unit<br>• Median represents typical performance<br>• Always check for outliers first!<br><div class='card-example'><strong>Rule:</strong> When outliers present → use median<br>When no outliers → mean is fine</div>"
+            },
+            {
+                category: "EE Applications",
+                question: "ADC readings: 2045, 2048, 2051, 2047, 2049, 2044 counts. Find the standard deviation.",
+                formula: "",
+                answer: "<strong>Solution:</strong><br>1. Mean = 2047.33 counts<br>2. Calculate deviations: (-2.33)², (0.67)², (3.67)², (-0.33)², (1.67)², (-3.33)²<br>3. s² = 33.34/5 = 6.67 counts²<br>4. s = √6.67 = 2.58 counts<br><div class='card-example'><strong>Conversion:</strong> If 1 count = 0.61 mV<br>SD in voltage = 2.58 × 0.61 = 1.57 mV</div>"
+            },
+            {
+                category: "Common Pitfalls",
+                question: "Why can't you just average group means when combining data?",
+                formula: "",
+                answer: "<strong>Because sample sizes matter!</strong><br>• Simple average ignores group sizes<br>• Larger groups should have more influence<br>• Must weight by sample size<br><div class='card-example'><strong>Example:</strong> Group A: n=100, mean=5V<br>Group B: n=10, mean=7V<br>Simple average: (5+7)/2 = 6V ❌<br>Correct: (100×5 + 10×7)/110 = 5.18V ✅</div>"
+            },
+            {
+                category: "Common Pitfalls",
+                question: "A student uses mean ± 2SD to find outliers. What's wrong?",
+                formula: "",
+                answer: "<strong>Problems with mean ± 2SD:</strong><br>• Assumes normal distribution<br>• Mean and SD affected by outliers<br>• Creates circular logic<br>• 1.5×IQR rule is more robust<br><div class='card-example'><strong>Better approach:</strong> Use quartiles and IQR<br>• Not affected by outliers<br>• Works for any distribution shape</div>"
+            },
+            {
+                category: "Unit Conversions",
+                question: "Voltage measurements have SD = 0.05V. Convert to millivolts - what's the new SD?",
+                formula: "",
+                answer: "<strong>New SD = 50 mV</strong><br>• Multiply by 1000 to convert V to mV<br>• SD scales linearly: SD<sub>new</sub> = |k| × SD<sub>old</sub><br>• Variance scales by k²<br><div class='card-example'><strong>Linear transformation:</strong><br>Original: SD = 0.05 V<br>Convert: ×1000<br>New SD = 0.05 × 1000 = 50 mV</div>"
+            },
+            {
+                category: "Quartiles Practice",
+                question: "Data: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8 ns. Find Q₁ and Q₃.",
+                formula: "",
+                answer: "<strong>Solution:</strong><br>• n = 8 (even number)<br>• Q₁ position = 2.25 → between 2nd and 3rd values<br>• Q₁ = 4.2 + 0.25(4.3-4.2) = 4.25 ns<br>• Q₃ position = 6.75 → between 6th and 7th values<br>• Q₃ = 4.6 + 0.75(4.7-4.6) = 4.65 ns<br><div class='card-example'><strong>IQR = 4.65 - 4.25 = 0.40 ns</strong></div>"
+            },
+            {
+                category: "Resistance Example",
+                question: "I-V data shows linear trend except one point. What might cause the deviation?",
+                formula: "",
+                answer: "<strong>Possible causes of I-V outliers:</strong><br>• <strong>Component heating:</strong> R increases at high power<br>• <strong>Measurement error:</strong> Bad connection, meter issue<br>• <strong>Component damage:</strong> Exceeded ratings<br>• <strong>Nonlinear effects:</strong> Not purely resistive<br><div class='card-example'><strong>EE Insight:</strong> Don't assume outliers are always errors!<br>They often reveal important physics</div>"
+            },
+            {
+                category: "Statistics Rules",
+                question: "What does the Empirical Rule tell us?",
+                formula: "68% within ±1SD, 95% within ±2SD, 99.7% within ±3SD",
+                answer: "<strong>Empirical Rule (68-95-99.7):</strong><br>For bell-shaped distributions:<br>• ~68% within ±1 SD<br>• ~95% within ±2 SD<br>• ~99.7% within ±3 SD<br><div class='card-example'><strong>EE Application:</strong> If resistor spec is 100Ω ± 5%<br>and SD = 2Ω, then ~95% are within 96-104Ω</div>"
+            },
+            {
+                category: "Sample Size",
+                question: "Why do we use n-1 in the sample variance formula?",
+                formula: "",
+                answer: "<strong>Degrees of Freedom:</strong><br>• We lose 1 degree of freedom estimating the mean<br>• n-1 makes sample variance unbiased<br>• Called Bessel's correction<br>• For large n, n-1 ≈ n<br><div class='card-example'><strong>Intuition:</strong> If you know n-1 deviations and the mean, the last deviation is determined<br>Only n-1 values are 'free' to vary</div>"
+            },
+            {
+                category: "EE Tolerance",
+                question: "A 47kΩ resistor measures 46.8kΩ. Is this within ±5% tolerance?",
+                formula: "",
+                answer: "<strong>Yes, within tolerance!</strong><br>• 5% of 47kΩ = 2.35kΩ<br>• Acceptable range: 44.65kΩ to 49.35kΩ<br>• 46.8kΩ falls within this range<br><div class='card-example'><strong>Tolerance check:</strong><br>|46.8 - 47| = 0.2kΩ<br>Percent error = 0.2/47 = 0.43% < 5% ✅</div>"
+            },
+            {
+                category: "Measurement Systems",
+                question: "You have 5 measurements with 1 obvious outlier. How do you report the central value?",
+                formula: "",
+                answer: "<strong>Report the median:</strong><br>• Less sensitive to the outlier<br>• More representative of typical value<br>• Include note about outlier<br>• Investigate outlier cause<br><div class='card-example'><strong>Report format:</strong> 'Median = 12.2 mW (n=5)<br>Note: One outlier at 37.8 mW likely defective'</div>"
+            },
+            {
+                category: "Quality Control",
+                question: "Production line produces components with specs. How do you use IQR for quality control?",
+                formula: "",
+                answer: "<strong>IQR Quality Control:</strong><br>• Monitor Q₁, median, Q₃ over time<br>• Flag batches with excessive IQR<br>• Use 1.5×IQR rule to identify defects<br>• Track outlier percentage<br><div class='card-example'><strong>Alert system:</strong> If outlier rate > 2% or IQR increases 50%, investigate process</div>"
+            },
+            {
+                category: "Data Analysis",
+                question: "When combining resistor bins with same SD but different means, what happens to overall SD?",
+                formula: "",
+                answer: "<strong>Overall SD increases!</strong><br>• Even though individual SDs are equal<br>• Between-group variation adds to within-group<br>• Combined data spans wider range<br><div class='card-example'><strong>Example:</strong> 50Ω bin (SD=2Ω) + 100Ω bin (SD=2Ω)<br>Combined SD >> 2Ω because values span 46-104Ω</div>"
+            },
+            {
+                category: "Formulas Review",
+                question: "What's the difference between sample variance and population variance?",
+                formula: "Sample: s² = Σ(xᵢ - x̄)² / (n-1)<br>Population: σ² = Σ(xᵢ - μ)² / N",
+                answer: "<strong>Key differences:</strong><br>• Sample uses n-1, population uses N<br>• Sample estimates, population is exact<br>• Sample uses x̄, population uses μ<br>• In EE, we almost always use sample formulas<br><div class='card-example'><strong>Remember:</strong> Real data = samples from population<br>Use n-1 for unbiased estimation</div>"
+            },
+            {
+                category: "Final Review",
+                question: "Quick check: When do you use mean vs median, and what's the 1.5×IQR rule?",
+                formula: "",
+                answer: "<strong>Mean vs Median:</strong><br>• Mean: No outliers, symmetric data<br>• Median: Outliers present, skewed data<br><br><strong>1.5×IQR Rule:</strong><br>• Lower fence: Q₁ - 1.5×IQR<br>• Upper fence: Q₃ + 1.5×IQR<br>• Values outside fences = outliers<br><div class='card-example'><strong>EE tip:</strong> Always plot your data first!</div>"
+            },
+            {
+                category: "Master Review",
+                question: "State the linear transformation rules for mean and standard deviation.",
+                formula: "",
+                answer: "<strong>Linear Transformation Rules:</strong><br><br><strong>Add constant c:</strong><br>• New mean = x̄ + c<br>• New SD = s (unchanged)<br><br><strong>Multiply by k:</strong><br>• New mean = k·x̄<br>• New SD = |k|·s<br><div class='card-example'><strong>EE Example:</strong> Convert 5V ± 0.1V to mV<br>New: 5000mV ± 100mV</div>"
+            }
+        ];<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EE 345 Statistics Flashcards</title>
+    <title>EE 345 Flashcards</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
     <script>
         window.MathJax = {
@@ -291,8 +443,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>EE 345 Statistics Flashcards</h1>
-            <p>Master key concepts for Electrical Engineering</p>
+            <h1>EE 345 Flashcards</h1>
+            <p>CH01</p>
         </div>
 
         <div class="controls">
