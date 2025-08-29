@@ -55,7 +55,7 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>EE Statistics — 20‑Question Quiz</h1>
+      <h1>EE 345 - CH01 — Prctice Quiz</h1>
       <p>Multiple‑choice flashcards: one question at a time.</p>
     </header>
 
@@ -100,18 +100,18 @@
       {t:"Outliers", q:"1.5×IQR rule flags outliers", c:["|x−x̄| > 2s","Outside Q1−1.5IQR or Q3+1.5IQR","r < −0.5","p < 0.05"], a:1, h:"Uses quartiles, not mean/SD."},
       {t:"Transforms", q:"Multiply all data by k. SD becomes", c:["k²·s","|k|·s","s/k","s"], a:1, h:"SD scales linearly with |k|."},
       {t:"Transforms", q:"Add constant c to all data. Variance becomes", c:["Var + c","Var × c","Unchanged","Var²"], a:2, h:"Shifts do not change spread."},
-      {t:"Standardization", q:"Z‑score (sample)", c:["(x − x̄) / s","(x − μ) / σ","x / s","x̄ / s"], a:0, h:"Center by sample mean; scale by s."},
-      {t:"Empirical Rule", q:"Within ±2 SD we expect", c:["68%","75%","95%","99.7%"], a:2, h:"68–95–99.7."},
-      {t:"Chebyshev", q:"Within 2 SD at least", c:["68%","75%","90%","95%"], a:1, h:"Distribution‑free bound."},
-      {t:"Association", q:"Correlation r ≈ 0 implies", c:["No linear relation","No relation at all","Perfect curve","Causation"], a:0, h:"Could still be nonlinear."},
-      {t:"Sampling", q:"Standard error of the mean (SEM)", c:["s / √n","s","s²","√(s / n)"], a:0, h:"Mean’s sampling variability."},
-      {t:"Variance", q:"Sample variance uses", c:["n","n−1","n+1","N"], a:1, h:"Bessel’s correction."},
+      //{t:"Standardization", q:"Z‑score (sample)", c:["(x − x̄) / s","(x − μ) / σ","x / s","x̄ / s"], a:0, h:"Center by sample mean; scale by s."},
+     // {t:"Empirical Rule", q:"Within ±2 SD we expect", c:["68%","75%","95%","99.7%"], a:2, h:"68–95–99.7."},
+     // {t:"Chebyshev", q:"Within 2 SD at least", c:["68%","75%","90%","95%"], a:1, h:"Distribution‑free bound."},
+    //  {t:"Association", q:"Correlation r ≈ 0 implies", c:["No linear relation","No relation at all","Perfect curve","Causation"], a:0, h:"Could still be nonlinear."},
+     // {t:"Sampling", q:"Standard error of the mean (SEM)", c:["s / √n","s","s²","√(s / n)"], a:0, h:"Mean’s sampling variability."},
+      {t:"Variance", q:"Sample variance uses", c:["n","n−1","n+1","N"], a:1, h:"n-1 for sample, n for population"},
       {t:"Mixtures", q:"Combining groups with different means", c:["SD usually increases","SD decreases","SD unchanged","Only median changes"], a:0, h:"Between‑group spread adds."},
       {t:"Quartiles", q:"IQR equals", c:["Q2 − Q1","Q3 − Q1","Q4 − Q1","Q2 − Q0"], a:1, h:"Middle 50% range."},
       {t:"Robustness", q:"Outliers affect mean vs median", c:["Mean less affected","Median moves more","Mean more affected","Same effect"], a:2, h:"Median is robust."},
       {t:"Units", q:"Convert V→mV. Mean and SD", c:["×1000 both","×1000 mean only","×1000 SD only","÷1000 both"], a:0, h:"Linear factor applies to both."},
       {t:"Boxplots", q:"Fences are located at", c:["x̄ ± 2s","Q1−1.5IQR and Q3+1.5IQR","Q2 ± IQR","Min and Max"], a:1, h:"Same as 1.5×IQR rule."},
-      {t:"Notation", q:"Population variance symbol", c:["s²","σ²","μ","x̄"], a:1, h:"Greek letter for population."},
+      {t:"Notation", q:"Sample variance symbol", c:["s²","σ²","μ","x̄"], a:0, h:"s for sample, σ for population."},
       {t:"Skew", q:"Right‑skewed data: mean vs median", c:["Mean < Median","Mean = Median","Mean > Median","Unrelated"], a:2, h:"Tail pulls mean right."},
       {t:"Median", q:"Median for even n is", c:["Middle value","Mean of two middles","Weighted middle","Undefined"], a:1, h:"Average the central pair."}
     ];
