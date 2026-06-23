@@ -47,6 +47,22 @@
       "doi": "10.3390/bios15030149"
     },
     {
+      "authors": ["Duran, K.", "Hernandez, R.J.", "Shrestha, S."],
+      "title": "Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Accelerated by Human Demonstration",
+      "venue": "2025 3rd International Conference on Disruptive Technologies (ICDT)",
+      "location": "Greater Noida, India",
+      "year": 2025,
+      "pages": "537–542"
+    },
+    {
+      "authors": ["Piazza, O.", "Shrestha, S."],
+      "title": "Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation",
+      "venue": "2025 3rd International Conference on Disruptive Technologies (ICDT)",
+      "location": "Greater Noida, India",
+      "year": 2025,
+      "pages": "386–390"
+    },
+    {
       "authors": ["Boubin, M.", "Shrestha, S."],
       "title": "Microcontroller Implementation of Support Vector Machine for Detecting Blood Glucose Levels Using Breath Volatile Organic Compounds",
       "journal": "Applied Sciences",
@@ -104,22 +120,6 @@
     }
   ],
   "conference": [
-    {
-      "authors": ["Duran, K.", "Hernandez, R.J.", "Shrestha, S."],
-      "title": "Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Accelerated by Human Demonstration",
-      "venue": "2025 3rd International Conference on Disruptive Technologies (ICDT)",
-      "location": "Greater Noida, India",
-      "year": 2025,
-      "pages": "537–542"
-    },
-    {
-      "authors": ["Piazza, O.", "Shrestha, S."],
-      "title": "Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation",
-      "venue": "2025 3rd International Conference on Disruptive Technologies (ICDT)",
-      "location": "Greater Noida, India",
-      "year": 2025,
-      "pages": "386–390"
-    },
     {
       "authors": ["Shrestha, S.", "Harold, C.", "Boubin, M.", "Lawrence, L."],
       "title": "Smart Wristband with Integrated Chemical Sensors for Detecting Glucose Levels Using Breath Volatile Organic Compounds",
