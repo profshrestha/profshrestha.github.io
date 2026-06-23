@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Sudhir Shrestha, Ph.D.</title>
+  <meta name="description" content="Research areas and projects — Sudhir Shrestha, Ph.D., Sonoma State University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/isl-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/isl-logo.svg" alt="Sudhir Shrestha">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="index.html#footer">Contact</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Research</h1>
+    <p>Engineering intelligent systems for health, robotics, and real-world sensing at the intersection of embedded AI and biomedical engineering.</p>
+  </div>
+</section>
+
+<!-- BIOMEDICAL SENSING -->
+<section class="section" id="biomedical" style="background:var(--color-surface)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Biomedical Sensing and Health AI</h2>
+      <p>Non-invasive disease detection and wearable health monitoring</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">The central theme of this research thread is the non-invasive detection of disease biomarkers — particularly volatile organic compounds (VOCs) exhaled in human breath — as a painless alternative to blood-draw-based diagnostics. Key efforts include:</p>
+        <ul class="research-list">
+          <li><strong>Breath-based blood glucose monitoring</strong> — sensor arrays combined with machine learning to predict blood glucose levels from exhaled acetone and other VOC markers, targeting non-diabetic and pre-diabetic populations.</li>
+          <li><strong>Chipless RFID VOC sensors</strong> — passive, battery-free wireless sensing patches that shift resonant frequency in response to target analytes, enabling wearable or disposable health monitoring.</li>
+          <li><strong>Clinical data collection platforms</strong> — custom embedded systems for controlled breath sample capture and simultaneous glucose reference measurement in IRB-approved human-subject studies.</li>
+          <li><strong>On-device machine learning</strong> — lightweight regression and classification models deployed on microcontrollers for real-time inference without cloud connectivity.</li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <a href="https://sonomaisl.ai/research.html" target="_blank" rel="noopener" class="btn btn-teal">ISL Research Projects →</a>
+        </div>
+      </div>
+      <div class="about-meta">
+        <h3>Funding</h3>
+        <div class="edu-item">
+          <div class="edu-degree">NSF Smart and Connected Health</div>
+          <div class="edu-inst">Principal Investigator</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">CSU Biotech Faculty Research Award</div>
+          <div class="edu-inst">Principal Investigator</div>
+        </div>
+        <h3 style="margin-top:1.5rem">Collaborators</h3>
+        <div class="edu-item">
+          <div class="edu-degree">UCSF / Bay Area clinical partners</div>
+          <div class="edu-inst">Human subject studies</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">SSU Biology &amp; Chemistry</div>
+          <div class="edu-inst">VOC characterization</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROBOTICS -->
+<section class="section" id="robotics" style="background:var(--color-bg)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Intelligent Robotics and AI</h2>
+      <p>Learning-based manipulation, sim-to-real transfer, and autonomous systems</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">Through the ISL, this work applies modern machine learning to physical robotic systems using low-cost platforms such as the WidowX arm and UMI devices. Research directions include:</p>
+        <ul class="research-list">
+          <li><strong>Imitation learning for bimanual coordination</strong> — using UMI (Universal Manipulation Interface) to collect human demonstration data and train policies for two-arm handoff tasks.</li>
+          <li><strong>Sim-to-real reinforcement learning</strong> — training robot arm control policies in simulation (PyBullet, IsaacGym) and transferring to real hardware with minimal real-world fine-tuning.</li>
+          <li><strong>Vision-Language-Action (VLA) systems</strong> — integrating large language models and visual perception for task-conditioned robot control in rehabilitation and manipulation settings.</li>
+          <li><strong>NLP-guided navigation</strong> — natural language command parsing for autonomous mobile robot navigation in indoor environments.</li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <a href="https://sonomaisl.ai" target="_blank" rel="noopener" class="btn btn-teal">Visit sonomaisl.ai →</a>
+        </div>
+      </div>
+      <div class="about-meta">
+        <h3>Platforms</h3>
+        <div class="edu-item"><div class="edu-degree">WidowX Robot Arm</div><div class="edu-inst">Trossen Robotics</div></div>
+        <div class="edu-item"><div class="edu-degree">UMI (Universal Manipulation Interface)</div></div>
+        <div class="edu-item"><div class="edu-degree">ROS / ROS 2</div></div>
+        <div class="edu-item"><div class="edu-degree">PyBullet, IsaacGym</div><div class="edu-inst">Simulation environments</div></div>
+        <h3 style="margin-top:1.5rem">Methods</h3>
+        <div class="edu-item"><div class="edu-degree">ACT / Diffusion Policy</div><div class="edu-inst">Imitation learning</div></div>
+        <div class="edu-item"><div class="edu-degree">PPO, SAC</div><div class="edu-inst">Reinforcement learning</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMBEDDED -->
+<section class="section" id="embedded" style="background:var(--color-surface)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Embedded Systems and Edge AI</h2>
+      <p>Low-power sensor platforms and on-device machine intelligence</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">A horizontal thread across all ISL projects: building the embedded hardware and firmware that deploys intelligent algorithms outside the lab, on constrained devices:</p>
+        <ul class="research-list">
+          <li><strong>Sensor acquisition systems</strong> — custom PCB designs for gas sensors, biosensors, and multi-modal arrays with analog front-end conditioning and ADC integration.</li>
+          <li><strong>RTOS-based firmware</strong> — FreeRTOS implementations on STM32, ESP32, and ARM Cortex-M platforms for real-time data acquisition and BLE/WiFi telemetry.</li>
+          <li><strong>TinyML / Edge inference</strong> — TensorFlow Lite and ONNX model deployment on microcontrollers for on-device classification and regression.</li>
+          <li><strong>Environmental monitoring</strong> — VOC, particulate matter, and CO₂ sensing networks for indoor air quality research.</li>
+        </ul>
+      </div>
+      <div class="about-meta">
+        <h3>Hardware</h3>
+        <div class="edu-item"><div class="edu-degree">STM32 / ESP32 / Raspberry Pi</div></div>
+        <div class="edu-item"><div class="edu-degree">Custom PCB design</div><div class="edu-inst">KiCad, Altium</div></div>
+        <div class="edu-item"><div class="edu-degree">TensorFlow Lite / Edge Impulse</div></div>
+        <h3 style="margin-top:1.5rem">Applications</h3>
+        <div class="edu-item"><div class="edu-degree">Wearable health monitors</div></div>
+        <div class="edu-item"><div class="edu-degree">Air quality networks</div></div>
+        <div class="edu-item"><div class="edu-degree">Robot sensor integration</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WIRELESS -->
+<section class="section" id="wireless" style="background:var(--color-bg)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Wireless Sensing and RFID</h2>
+      <p>Passive RF sensors, chipless RFID, and microwave biomedical applications</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">This research area originated at Purdue University and continues at SSU, focusing on leveraging RF and microwave phenomena for sensing without active electronics:</p>
+        <ul class="research-list">
+          <li><strong>Chipless RFID sensors</strong> — frequency-coded passive tags whose resonant frequency shifts in response to analyte adsorption, enabling battery-free chemical sensing.</li>
+          <li><strong>Wearable antenna design</strong> — flexible, textile-integrated antennas for body-worn sensor tags and health monitoring patches.</li>
+          <li><strong>VOC detection via RF</strong> — integrating functionalized polymer coatings onto RFID structures to create selectivity toward specific volatile analytes relevant to disease biomarkers.</li>
+          <li><strong>Microwave material characterization</strong> — using reflection/transmission measurements to characterize dielectric properties of biological tissues and materials.</li>
+        </ul>
+      </div>
+      <div class="about-meta">
+        <h3>Patents in this area</h3>
+        <div class="edu-item"><div class="edu-degree">7 U.S. patents issued</div><div class="edu-inst">Wireless sensing &amp; VOC detection</div></div>
+        <h3 style="margin-top:1.5rem">History</h3>
+        <div class="edu-item"><div class="edu-degree">Purdue University</div><div class="edu-inst">2009–2016 (postdoc + research professor)</div></div>
+        <div class="edu-item"><div class="edu-degree">SSU / ISL</div><div class="edu-inst">2017–present</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo/isl-logo.svg" alt="ISL">
+          <span class="footer-name">Sudhir Shrestha, Ph.D.</span>
+        </div>
+        <div class="footer-tagline">Chair, School of Engineering and Computer Science · Sonoma State University</div>
+        <div class="footer-addr">
+          Salazar 2002 / 2008<br>
+          1801 East Cotati Avenue<br>
+          Rohnert Park, CA 94928<br>
+          <a href="mailto:shrestsu@sonoma.edu">shrestsu@sonoma.edu</a><br>
+          <a href="https://sonomaisl.ai" target="_blank" rel="noopener">sonomaisl.ai</a>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Site</h4>
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="mailto:shrestsu@sonoma.edu">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sudhir Shrestha, Ph.D. · Sonoma State University</span>
+      <span>sudhirshrestha.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
