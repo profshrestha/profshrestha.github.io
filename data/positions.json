@@ -1,9 +1,10 @@
 [
-  { "years": "2024–Present", "institution": "Sonoma State University",             "role": "Chair, School of Engineering and Computer Science" },
+  { "years": "2021–Present", "institution": "Sonoma State University",             "role": "Associate Professor" },
+  { "years": "2017–Present", "institution": "Sonoma State University",             "role": "Director, Intelligent Systems Lab" },
+  { "years": "2024–2024",    "institution": "Sonoma State University",             "role": "Chair, School of Engineering and Computer Science" },
   { "years": "2022–2024",    "institution": "Sonoma State University",             "role": "Chair, Department of Engineering" },
-  { "years": "2021–Present", "institution": "Sonoma State University",             "role": "Associate Professor of Electrical Engineering" },
   { "years": "2017–2021",    "institution": "Sonoma State University",             "role": "Assistant Professor" },
-  { "years": "2016–2017",    "institution": "Miami University, Oxford, OH",        "role": "Visiting Assistant Professor, Dept. of Electrical and Computer Engineering" },
+  { "years": "2016–2017",    "institution": "Miami University, Oxford, OH",        "role": "Visiting Assistant Professor" },
   { "years": "2011–2016",    "institution": "Purdue University, Indianapolis, IN", "role": "Assistant Research Professor" },
   { "years": "2009–2011",    "institution": "Purdue University, Indianapolis, IN", "role": "Postdoctoral Researcher" },
   { "years": "2004–2005",    "institution": "Digital Link, Kathmandu, Nepal",      "role": "Founder — Network, Systems & Hardware" },
