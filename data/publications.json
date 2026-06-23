@@ -1,0 +1,145 @@
+{
+  "patents": [
+    {
+      "title": "A Device to Collect Breath Data from Type-2 Diabetes Patients in Real-Life Situations",
+      "number": "US 12,278,013 B2",
+      "issued": "April 15, 2025"
+    },
+    {
+      "title": "Volatile Organic Compound Sensors, and Methods of Making and Using the Same",
+      "number": "US 10,107,827 B1",
+      "issued": "October 22, 2018"
+    },
+    {
+      "title": "Low Power Wireless Sensor System with Ring Oscillator and Sensors for Use in Monitoring of Physiological Data",
+      "number": "US 2015/0295562 A1",
+      "issued": "October 14, 2015"
+    },
+    {
+      "title": "Wearable Microstrip Antennas for Skin Placement for Biomedical Applications",
+      "number": "US 9,044,158 B2",
+      "issued": "June 1, 2015"
+    },
+    {
+      "title": "Paper-Based Lithium-Ion Batteries",
+      "number": "US 9,548,496 B2 / US 9,531,010 B2 / US 9,472,832 B2",
+      "issued": "2016–2017"
+    },
+    {
+      "title": "Layer-by-Layer Assembled Nanoparticles Based Thin Films for Solar Cells and Other Applications",
+      "number": "US 9,444,003 B2",
+      "issued": "September 12, 2016"
+    },
+    {
+      "title": "Transmission Delay Based RFID Tag",
+      "number": "US 8,179,231 B1 / US 8,736,452 B1",
+      "issued": "2012–2014"
+    }
+  ],
+  "journal": [
+    {
+      "authors": ["Naser, S.", "Roberts, D.A.", "Shrestha, S."],
+      "title": "At-Home Breath Data Collection for Signatures of Type 2 Diabetes: A Pilot Clinical Study",
+      "journal": "Biosensors",
+      "volume": "15",
+      "number": "3",
+      "year": 2025,
+      "doi": "10.3390/bios15030149"
+    },
+    {
+      "authors": ["Boubin, M.", "Shrestha, S."],
+      "title": "Microcontroller Implementation of Support Vector Machine for Detecting Blood Glucose Levels Using Breath Volatile Organic Compounds",
+      "journal": "Applied Sciences",
+      "volume": "19",
+      "number": "",
+      "year": 2022
+    },
+    {
+      "authors": ["Siegel, A.", "Daneshkhah, A.", "Hardin, D.", "Shrestha, S.", "et al."],
+      "title": "Analyzing Breath Samples of Hypoglycemic Events in Type 1 Diabetes Patients: Towards Developing an Alternative to Diabetes Alert Dogs",
+      "journal": "Journal of Diabetes Science and Technology",
+      "volume": "",
+      "number": "",
+      "year": 2021
+    },
+    {
+      "authors": ["Vora, P.", "Shrestha, S."],
+      "title": "Detecting Diabetic Retinopathy Using Embedded Computer Vision",
+      "journal": "Applied Sciences",
+      "volume": "10",
+      "number": "20",
+      "year": 2020
+    },
+    {
+      "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
+      "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Composite Sensors for Volatile Organic Compounds Detection in Breath",
+      "journal": "Sensors and Actuators B",
+      "volume": "221",
+      "number": "",
+      "year": 2015
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "A Chipless RFID Sensor System for Cyber Centric Monitoring Applications",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "volume": "",
+      "number": "",
+      "year": 2015
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "Breast Tumor Detection by Flexible Wearable Antenna System",
+      "journal": "International Journal of Computer Aided Engineering and Technology",
+      "volume": "4",
+      "number": "6",
+      "year": 2012
+    },
+    {
+      "authors": ["Balachandran, M.D.", "Shrestha, S.", "et al."],
+      "title": "SnO2 Capacitive Sensor Integrated with Microstrip Patch Antenna for Passive Wireless Detection of Ethylene Gas",
+      "journal": "IEE Electronics Letters",
+      "volume": "44",
+      "number": "7",
+      "year": 2008
+    }
+  ],
+  "conference": [
+    {
+      "authors": ["Duran, K.", "Hernandez, R.J.", "Shrestha, S."],
+      "title": "Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Accelerated by Human Demonstration",
+      "venue": "2025 3rd International Conference on Disruptive Technologies (ICDT)",
+      "location": "Greater Noida, India",
+      "year": 2025,
+      "pages": "537–542"
+    },
+    {
+      "authors": ["Piazza, O.", "Shrestha, S."],
+      "title": "Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation",
+      "venue": "2025 3rd International Conference on Disruptive Technologies (ICDT)",
+      "location": "Greater Noida, India",
+      "year": 2025,
+      "pages": "386–390"
+    },
+    {
+      "authors": ["Shrestha, S.", "Harold, C.", "Boubin, M.", "Lawrence, L."],
+      "title": "Smart Wristband with Integrated Chemical Sensors for Detecting Glucose Levels Using Breath Volatile Organic Compounds",
+      "venue": "Smart Biomedical and Physiological Sensor Technology",
+      "location": "",
+      "year": 2020
+    },
+    {
+      "authors": ["Chen, Y.-T.", "Shrestha, S."],
+      "title": "Source Classification of Indoor Air Pollutants Using Principal Component Analysis for Smart Home Monitoring Applications",
+      "venue": "2018 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",
+      "location": "",
+      "year": 2018
+    },
+    {
+      "authors": ["Chen, Y.-T.", "et al."],
+      "title": "Electronic Nose for Ambient Detection and Monitoring",
+      "venue": "Proceedings of SPIE Defense and Commercial Sensing Conference",
+      "location": "Anaheim, CA",
+      "year": 2017
+    }
+  ]
+}
