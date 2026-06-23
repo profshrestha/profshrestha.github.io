@@ -88,11 +88,27 @@
     },
     {
       "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
+      "title": "Cross-Selectivity Enhancement of Poly(Vinylidene Fluoride-Hexafluoropropylene)-Based Sensor-Array for Detecting Acetone and Ethanol",
+      "journal": "MDPI Sensors",
+      "volume": "17",
+      "number": "3",
+      "year": 2017
+    },
+    {
+      "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
       "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Composite Sensors for Volatile Organic Compounds Detection in Breath",
       "journal": "Sensors and Actuators B",
       "volume": "221",
       "number": "",
       "year": 2015
+    },
+    {
+      "authors": ["Aliahmad, N.", "Shrestha, S.", "et al."],
+      "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Polymer Electrolyte for Paper-Based and Flexible Battery Applications",
+      "journal": "AIP Advances",
+      "volume": "6",
+      "number": "065206",
+      "year": 2016
     },
     {
       "authors": ["Shrestha, S.", "et al."],
@@ -103,6 +119,46 @@
       "year": 2015
     },
     {
+      "authors": ["Rizkalla, M.", "et al."],
+      "title": "A Novel Model for Integrating Nanotechnology Track into Engineering Programs",
+      "journal": "Journal of Nano Education",
+      "volume": "5",
+      "number": "2",
+      "year": 2013
+    },
+    {
+      "authors": ["Aliahmad, N.", "et al."],
+      "title": "Paper-Based Lithium-Ion Batteries Using Carbon Nanotube-Coated Wood Microfibers",
+      "journal": "IEEE Transactions on Nanotechnology",
+      "volume": "12",
+      "number": "3",
+      "year": 2013
+    },
+    {
+      "authors": ["Balachandran, M.D.", "et al."],
+      "title": "SnO2 Nanoparticles-Based Passive Capacitive Sensor for Ethylene Detection",
+      "journal": "Journal of Nanomaterials",
+      "volume": "2012",
+      "number": "145406",
+      "year": 2012
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "Flexible Microstrip Antenna for Skin Contact Application",
+      "journal": "International Journal of Antennas and Propagation",
+      "volume": "2012",
+      "number": "745426",
+      "year": 2012
+    },
+    {
+      "authors": ["Hemati, A.", "Shrestha, S.", "Agrawal, M.", "Varahramyan, K."],
+      "title": "Layer-by-Layer (LbL) Nanoassembly of Copper Indium Gallium Selenium (CIGS) Nanoparticles Films for Solar Cell Applications",
+      "journal": "Journal of Nanomaterials",
+      "volume": "2012",
+      "number": "512409",
+      "year": 2012
+    },
+    {
       "authors": ["Shrestha, S.", "et al."],
       "title": "Breast Tumor Detection by Flexible Wearable Antenna System",
       "journal": "International Journal of Computer Aided Engineering and Technology",
@@ -111,12 +167,36 @@
       "year": 2012
     },
     {
+      "authors": ["Rizkalla, M.", "et al."],
+      "title": "Raman Spectroscopy for Human Cancer Tissue Diagnosis: A Pattern Recognition Approach",
+      "journal": "Journal of Biomedical Science and Engineering",
+      "volume": "5",
+      "number": "12A",
+      "year": 2012
+    },
+    {
+      "authors": ["Shrestha, S.", "Balachandran, M.D.", "et al."],
+      "title": "A Method to Measure Radar Cross Section Parameters of Antennas",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "volume": "55",
+      "number": "11",
+      "year": 2008
+    },
+    {
       "authors": ["Balachandran, M.D.", "Shrestha, S.", "et al."],
       "title": "SnO2 Capacitive Sensor Integrated with Microstrip Patch Antenna for Passive Wireless Detection of Ethylene Gas",
       "journal": "IEE Electronics Letters",
       "volume": "44",
       "number": "7",
       "year": 2008
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "Transmission Line Reflection and Delay-Based ID Generation Scheme for RFID and Other Applications",
+      "journal": "International Journal of Radio Frequency Identification Technology and Applications",
+      "volume": "1",
+      "number": "4",
+      "year": 2007
     }
   ],
   "conference": [
@@ -135,11 +215,94 @@
       "year": 2018
     },
     {
+      "authors": ["McWhorter, T.", "Shrestha, S."],
+      "title": "System for Monitoring Air Quality and Smog",
+      "venue": "2018 IEEE International Conference on Electro/Information Technology (EIT)",
+      "location": "Rochester, MI",
+      "year": 2018,
+      "pages": "0415–0419"
+    },
+    {
+      "authors": ["Shrestha, S.", "Farahmand, F."],
+      "title": "Introducing Project-Based Engineering Laboratory to Non-Engineering Undergraduate Students",
+      "venue": "125th ASEE Annual Conference and Exposition",
+      "location": "Salt Lake City, UT",
+      "year": 2018
+    },
+    {
       "authors": ["Chen, Y.-T.", "et al."],
       "title": "Electronic Nose for Ambient Detection and Monitoring",
       "venue": "Proceedings of SPIE Defense and Commercial Sensing Conference",
       "location": "Anaheim, CA",
       "year": 2017
+    },
+    {
+      "authors": ["Jafarian, H.", "Daneshkhah, A.", "Shrestha, S.", "et al."],
+      "title": "Temperature-Stable, Low-Power Ring Oscillator Design for ASIC Applications",
+      "venue": "SPIE 9106, Advanced Environmental, Chemical, and Biological Sensing Technologies XI",
+      "location": "",
+      "year": 2014,
+      "pages": "910601"
+    },
+    {
+      "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
+      "title": "PPy/PMMA/PEG-Based Sensor for Low-Concentration Acetone Detection",
+      "venue": "SPIE 9107, Smart Biomedical and Physiological Sensor Technology XI",
+      "location": "",
+      "year": 2014,
+      "pages": "910712"
+    },
+    {
+      "authors": ["Aliahmad, N.", "et al."],
+      "title": "Paper Based Lithium Magnesium Oxide Battery",
+      "venue": "2013 ASME Manufacturing Science and Engineering Conference",
+      "location": "Madison, WI",
+      "year": 2013
+    },
+    {
+      "authors": ["Vittoe, R.", "Ho, T.", "Shrestha, S.", "et al."],
+      "title": "All Solution-Based Fabrication of CIGS Solar Cell",
+      "venue": "2013 ASME Manufacturing Science and Engineering Conference",
+      "location": "Madison, WI",
+      "year": 2013
+    },
+    {
+      "authors": ["Verma, R.", "et al."],
+      "title": "Carbon Nanotube-Based Microstrip Antenna Gas Sensor",
+      "venue": "IEEE 56th International Midwest Symposium on Circuits and Systems (MWSCAS)",
+      "location": "Columbus, OH",
+      "year": 2013
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "CIGS Nanoparticles for Solar Cell Application: Synthesis and Characterization",
+      "venue": "IEEE International Conference on Electro/Information Technology (EIT)",
+      "location": "Indianapolis, IN",
+      "year": 2012
+    },
+    {
+      "authors": ["Ghane, P.", "Shrestha, S.", "Agrawal, M.", "Varahramyan, K."],
+      "title": "Layer-by-Layer Assembly of CIS Nanoparticles",
+      "venue": "ASME 2010 International Manufacturing Science and Engineering Conference",
+      "location": "Erie, PA",
+      "year": 2010,
+      "pages": "415–418"
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "Microstrip Antenna for Direct Human Skin Contact Placement for Biomedical and Other Applications",
+      "venue": "Progress in Electromagnetic Research Symposium (PIERS)",
+      "location": "Cambridge, USA",
+      "year": 2010,
+      "pages": "923–931"
+    },
+    {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "A Chipless Sensor Tag Based RFID Technology for Cyber-Oriented Environment Sensing Applications",
+      "venue": "SPIE Symposium on Defense, Security and Sensing",
+      "location": "Orlando, FL",
+      "year": 2009,
+      "pages": "1–11"
     }
   ]
 }
