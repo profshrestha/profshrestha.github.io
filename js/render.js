@@ -47,12 +47,12 @@ async function renderPublications() {
   }
 
   let html = '';
-  if (pubs.patents?.length) {
-    html += `<div class="pub-group"><h2 class="pub-group-title">Patents</h2>${pubs.patents.map(patentHTML).join('')}</div>`;
-  }
   if (pubs.theses?.length) {
     html += `<div class="pub-group"><h2 class="pub-group-title">Graduate Research Direction</h2>
       <table class="thesis-table"><tbody>${pubs.theses.map(thesisRowHTML).join('')}</tbody></table></div>`;
+  }
+  if (pubs.patents?.length) {
+    html += `<div class="pub-group"><h2 class="pub-group-title">Patents</h2>${pubs.patents.map(patentHTML).join('')}</div>`;
   }
   const allPapers = pubs.papers || [];
   if (allPapers.length) {
