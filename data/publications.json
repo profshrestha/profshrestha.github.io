@@ -11,16 +11,6 @@
       "issued": "October 22, 2018"
     },
     {
-      "title": "Low Power Wireless Sensor System with Ring Oscillator and Sensors for Use in Monitoring of Physiological Data",
-      "number": "US 2015/0295562 A1",
-      "issued": "October 14, 2015"
-    },
-    {
-      "title": "Wearable Microstrip Antennas for Skin Placement for Biomedical Applications",
-      "number": "US 9,044,158 B2",
-      "issued": "June 1, 2015"
-    },
-    {
       "title": "Paper-Based Lithium-Ion Batteries",
       "number": "US 9,548,496 B2 / US 9,531,010 B2 / US 9,472,832 B2",
       "issued": "2016–2017"
@@ -29,6 +19,16 @@
       "title": "Layer-by-Layer Assembled Nanoparticles Based Thin Films for Solar Cells and Other Applications",
       "number": "US 9,444,003 B2",
       "issued": "September 12, 2016"
+    },
+    {
+      "title": "Low Power Wireless Sensor System with Ring Oscillator and Sensors for Use in Monitoring of Physiological Data",
+      "number": "US 2015/0295562 A1",
+      "issued": "October 14, 2015"
+    },
+    {
+      "title": "Wearable Microstrip Antennas for Skin Placement for Biomedical Applications",
+      "number": "US 9,044,158 B2",
+      "issued": "June 1, 2015"
     },
     {
       "title": "Transmission Delay Based RFID Tag",
@@ -95,20 +95,20 @@
       "year": 2017
     },
     {
-      "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
-      "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Composite Sensors for Volatile Organic Compounds Detection in Breath",
-      "journal": "Sensors and Actuators B",
-      "volume": "221",
-      "number": "",
-      "year": 2015
-    },
-    {
       "authors": ["Aliahmad, N.", "Shrestha, S.", "et al."],
       "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Polymer Electrolyte for Paper-Based and Flexible Battery Applications",
       "journal": "AIP Advances",
       "volume": "6",
       "number": "065206",
       "year": 2016
+    },
+    {
+      "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
+      "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Composite Sensors for Volatile Organic Compounds Detection in Breath",
+      "journal": "Sensors and Actuators B",
+      "volume": "221",
+      "number": "",
+      "year": 2015
     },
     {
       "authors": ["Shrestha, S.", "et al."],

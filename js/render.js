@@ -39,12 +39,12 @@ async function renderPublications() {
   if (pubs.patents?.length) {
     html += `<div class="pub-group"><h2 class="pub-group-title">Patents</h2>${pubs.patents.map(patentHTML).join('')}</div>`;
   }
-  const jc = [
-    ...(pubs.journal||[]).map(p => pubHTML(p,'journal')),
-    ...(pubs.conference||[]).map(p => pubHTML(p,'conference'))
-  ];
-  if (jc.length) {
-    html += `<div class="pub-group"><h2 class="pub-group-title">Journal and Conference Papers</h2>${jc.join('')}</div>`;
+  const allPapers = [
+    ...(pubs.journal||[]).map(p => ({...p, _type:'journal'})),
+    ...(pubs.conference||[]).map(p => ({...p, _type:'conference'}))
+  ].sort((a,b) => b.year - a.year);
+  if (allPapers.length) {
+    html += `<div class="pub-group"><h2 class="pub-group-title">Journal and Conference Papers</h2>${allPapers.map(p => pubHTML(p, p._type)).join('')}</div>`;
   }
   el.innerHTML = html;
 }
