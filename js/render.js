@@ -35,9 +35,28 @@ async function renderPublications() {
       </div>`;
   }
 
+  const topicClass = { Robotics: 'thesis-badge--robotics', AI: 'thesis-badge--ai', Sensing: 'thesis-badge--sensing' };
+
+  function thesisRowHTML(t) {
+    const badge = `<span class="thesis-badge ${topicClass[t.topic] || ''}">${t.topic}</span>`;
+    return `
+      <tr>
+        <td class="thesis-year">${t.year}</td>
+        <td class="thesis-body">
+          <div class="thesis-student">${t.name}</div>
+          <div class="thesis-title">${t.title}</div>
+        </td>
+        <td class="thesis-badge-col">${badge}</td>
+      </tr>`;
+  }
+
   let html = '';
   if (pubs.patents?.length) {
     html += `<div class="pub-group"><h2 class="pub-group-title">Patents</h2>${pubs.patents.map(patentHTML).join('')}</div>`;
+  }
+  if (pubs.theses?.length) {
+    html += `<div class="pub-group"><h2 class="pub-group-title">Graduate Research Direction</h2>
+      <table class="thesis-table"><tbody>${pubs.theses.map(thesisRowHTML).join('')}</tbody></table></div>`;
   }
   const allPapers = pubs.papers || [];
   if (allPapers.length) {
