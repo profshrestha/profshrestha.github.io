@@ -35,10 +35,7 @@ async function renderPublications() {
       </div>`;
   }
 
-  const topicClass = { Robotics: 'thesis-badge--robotics', AI: 'thesis-badge--ai', Sensing: 'thesis-badge--sensing' };
-
   function thesisRowHTML(t) {
-    const badge = `<span class="thesis-badge ${topicClass[t.topic] || ''}">${t.topic}</span>`;
     return `
       <tr>
         <td class="thesis-year">${t.year}</td>
@@ -46,7 +43,6 @@ async function renderPublications() {
           <div class="thesis-student">${t.name}</div>
           <div class="thesis-title">${t.title}</div>
         </td>
-        <td class="thesis-badge-col">${badge}</td>
       </tr>`;
   }
 
