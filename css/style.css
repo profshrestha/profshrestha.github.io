@@ -226,6 +226,20 @@ h1,h2,h3,h4 { line-height: 1.25; font-weight: 700; }
 .pos-role  { color: var(--color-text); font-weight: 500; padding-right: 1.5rem; }
 .pos-inst  { color: var(--color-text-muted); }
 
+/* Graduate Research Direction table */
+.thesis-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.thesis-table tr { border-bottom: 1px solid var(--color-border); }
+.thesis-table tr:last-child { border-bottom: none; }
+.thesis-table td { padding: 0.8rem 1rem 0.8rem 0; vertical-align: middle; }
+.thesis-year    { white-space: nowrap; color: var(--color-accent); font-weight: 600; min-width: 56px; }
+.thesis-student { font-weight: 500; color: var(--color-text); }
+.thesis-title   { font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.1rem; }
+.thesis-badge-col { text-align: right; white-space: nowrap; padding-left: 1rem; }
+.thesis-badge   { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px; letter-spacing: 0.05em; text-transform: uppercase; }
+.thesis-badge--robotics { background: var(--color-primary);       color: #fff; }
+.thesis-badge--ai       { background: var(--color-accent);        color: #fff; }
+.thesis-badge--sensing  { background: #2A7D6F;                    color: #fff; }
+
 /* Research bullet list */
 .research-list { list-style: none; padding: 0; margin: 0; }
 .research-list li { padding: 0.6rem 0; border-bottom: 1px solid var(--color-border); font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; }
@@ -277,6 +291,9 @@ h1,h2,h3,h4 { line-height: 1.25; font-weight: 700; }
   .positions-table, .positions-table tbody, .positions-table tr, .positions-table td { display: block; }
   .pos-years { padding-bottom: 0; }
   .pos-inst  { padding-bottom: 0.85rem; }
+  .thesis-table, .thesis-table tbody, .thesis-table tr, .thesis-table td { display: block; }
+  .thesis-year { padding-bottom: 0; }
+  .thesis-badge-col { text-align: left; padding-top: 0.3rem; padding-bottom: 0.8rem; }
 }
 
 @media (max-width: 520px) {

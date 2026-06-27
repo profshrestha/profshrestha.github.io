@@ -1,4 +1,22 @@
 {
+  "theses": [
+    { "name": "Sokiyna Naser",       "year": 2024, "title": "At-Home Breath Profile Data Collection for Type-2 Diabetes",              "topic": "Sensing"   },
+    { "name": "Washaka Mahdi",       "year": 2024, "title": "OpenAI-Based ChatBot for SSU Engineering Website",                        "topic": "AI"        },
+    { "name": "Jorge Solorio",       "year": 2023, "title": "Automatic Navigation of Turtlebot3 Using Vision and LiDAR",               "topic": "Robotics"  },
+    { "name": "Austin Escalante",    "year": 2023, "title": "Exterior Vehicle Damage Assessment Using Deep Learning",                   "topic": "AI"        },
+    { "name": "Joel Richin",         "year": 2023, "title": "State Tracking System for Legacy Semiconductor Equipment",                 "topic": "Sensing"   },
+    { "name": "Het Patel",           "year": 2023, "title": "RTOS-Based Breath Data Collection Device with 4G Logging",                "topic": "Sensing"   },
+    { "name": "Abhijith Nidanakavi", "year": 2023, "title": "TruthSeeker: AI-Driven Detection of Fake and Propaganda Texts",           "topic": "AI"        },
+    { "name": "Scott Parmley",       "year": 2022, "title": "Autonomous Yield Estimator",                                              "topic": "AI"        },
+    { "name": "Priya Patel",         "year": 2022, "title": "STM32-Based Breath VOC Sensor System Design",                             "topic": "Sensing"   },
+    { "name": "Roel Hernandez",      "year": 2022, "title": "Deep RL Robot Arm Control via Human Demonstrations",                      "topic": "Robotics"  },
+    { "name": "Kirk Durand",         "year": 2021, "title": "Deep RL for 4-DOF Robot Arm Control Simulation",                         "topic": "Robotics"  },
+    { "name": "Olivia Piazza",       "year": 2020, "title": "NLP for Robotic Navigation Through Unknown Environments",                 "topic": "Robotics"  },
+    { "name": "Khuram Shehzad",      "year": 2020, "title": "FMCW Radar for Search and Rescue Applications",                          "topic": "Sensing"   },
+    { "name": "Parshva Vora",        "year": 2019, "title": "Diabetic Retinopathy Detection via Embedded Computer Vision",             "topic": "AI"        },
+    { "name": "Matthew Boubin",      "year": 2019, "title": "SVM for Blood Glucose Detection via Breath VOCs",                        "topic": "Sensing"   },
+    { "name": "Yan-Ting Chen",       "year": 2018, "title": "Smart Sensing System for Indoor Air Quality Monitoring",                  "topic": "Sensing"   }
+  ],
   "patents": [
     {
       "title": "A Device to Collect Breath Data from Type-2 Diabetes Patients in Real-Life Situations",
