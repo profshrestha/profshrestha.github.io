@@ -39,10 +39,7 @@ async function renderPublications() {
   if (pubs.patents?.length) {
     html += `<div class="pub-group"><h2 class="pub-group-title">Patents</h2>${pubs.patents.map(patentHTML).join('')}</div>`;
   }
-  const allPapers = [
-    ...(pubs.journal||[]),
-    ...(pubs.conference||[])
-  ].sort((a,b) => b.year - a.year);
+  const allPapers = pubs.papers || [];
   if (allPapers.length) {
     html += `<div class="pub-group"><h2 class="pub-group-title">Journal and Conference Papers</h2>${allPapers.map(p => pubHTML(p)).join('')}</div>`;
   }
@@ -70,10 +67,7 @@ async function renderRecentPubs() {
   const el = document.getElementById('recent-pubs');
   if (!el) return;
   const pubs = await load('data/publications.json');
-  const recent = [
-    ...(pubs.journal||[]),
-    ...(pubs.conference||[])
-  ].sort((a,b) => b.year - a.year).slice(0, 4);
+  const recent = (pubs.papers || []).slice(0, 4);
 
   el.innerHTML = recent.map(p => {
     const venue = p.journal
