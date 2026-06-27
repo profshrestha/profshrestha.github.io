@@ -63,22 +63,6 @@
       "pages": "386–390"
     },
     {
-      "authors": ["Boubin, M.", "Shrestha, S."],
-      "title": "Microcontroller Implementation of Support Vector Machine for Detecting Blood Glucose Levels Using Breath Volatile Organic Compounds",
-      "journal": "Applied Sciences",
-      "volume": "19",
-      "number": "",
-      "year": 2022
-    },
-    {
-      "authors": ["Siegel, A.", "Daneshkhah, A.", "Hardin, D.", "Shrestha, S.", "et al."],
-      "title": "Analyzing Breath Samples of Hypoglycemic Events in Type 1 Diabetes Patients: Towards Developing an Alternative to Diabetes Alert Dogs",
-      "journal": "Journal of Diabetes Science and Technology",
-      "volume": "",
-      "number": "",
-      "year": 2021
-    },
-    {
       "authors": ["Vora, P.", "Shrestha, S."],
       "title": "Detecting Diabetic Retinopathy Using Embedded Computer Vision",
       "journal": "Applied Sciences",
@@ -87,11 +71,27 @@
       "year": 2020
     },
     {
+      "authors": ["Boubin, M.", "Shrestha, S."],
+      "title": "Microcontroller Implementation of Support Vector Machine for Detecting Blood Glucose Levels Using Breath Volatile Organic Compounds",
+      "journal": "Sensors",
+      "volume": "19",
+      "number": "10",
+      "year": 2019
+    },
+    {
       "authors": ["Daneshkhah, A.", "Shrestha, S.", "et al."],
       "title": "Cross-Selectivity Enhancement of Poly(Vinylidene Fluoride-Hexafluoropropylene)-Based Sensor-Array for Detecting Acetone and Ethanol",
       "journal": "MDPI Sensors",
       "volume": "17",
       "number": "3",
+      "year": 2017
+    },
+    {
+      "authors": ["Siegel, A.", "Daneshkhah, A.", "Hardin, D.", "Shrestha, S.", "et al."],
+      "title": "Analyzing Breath Samples of Hypoglycemic Events in Type 1 Diabetes Patients: Towards Developing an Alternative to Diabetes Alert Dogs",
+      "journal": "Journal of Breath Research",
+      "volume": "11",
+      "number": "2",
       "year": 2017
     },
     {
@@ -107,14 +107,6 @@
       "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Composite Sensors for Volatile Organic Compounds Detection in Breath",
       "journal": "Sensors and Actuators B",
       "volume": "221",
-      "number": "",
-      "year": 2015
-    },
-    {
-      "authors": ["Shrestha, S.", "et al."],
-      "title": "A Chipless RFID Sensor System for Cyber Centric Monitoring Applications",
-      "journal": "IEEE Transactions on Microwave Theory and Techniques",
-      "volume": "",
       "number": "",
       "year": 2015
     },
@@ -175,10 +167,18 @@
       "year": 2012
     },
     {
+      "authors": ["Shrestha, S.", "et al."],
+      "title": "A Chipless RFID Sensor System for Cyber Centric Monitoring Applications",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "volume": "57",
+      "number": "5",
+      "year": 2009
+    },
+    {
       "authors": ["Shrestha, S.", "Balachandran, M.D.", "et al."],
       "title": "A Method to Measure Radar Cross Section Parameters of Antennas",
       "journal": "IEEE Transactions on Antennas and Propagation",
-      "volume": "55",
+      "volume": "56",
       "number": "11",
       "year": 2008
     },
