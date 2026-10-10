@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting | Sudhir Shrestha, Ph.D.</title>
+  <meta name="description" content="Robotics, embedded AI, and sensing consulting from a professor and lab director in the North Bay. Robot manipulation, imitation learning, edge inference, biomedical sensing, and expert review.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lead { font-size: 1.04rem; max-width: 68ch; margin-bottom: 1.1rem; }
+
+    .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .svc { background: var(--color-surface); border: 1px solid var(--color-border);
+           border-radius: var(--radius-lg); padding: 1.7rem 1.8rem; box-shadow: var(--shadow-sm); }
+    .svc h3 { font-size: 1.02rem; margin-bottom: 0.5rem; }
+    .svc > p { font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 1rem; }
+    .svc ul { list-style: none; padding: 0; margin: 0; }
+    .svc li { font-size: 0.85rem; margin-bottom: 0.45rem; padding-left: 1.1rem; position: relative; }
+    .svc li::before { content: "▸"; position: absolute; left: 0; color: var(--color-accent); }
+
+    .eng-list { display: grid; gap: 1rem; }
+    .eng { display: grid; grid-template-columns: 11rem 1fr; gap: 1.5rem; align-items: start;
+           background: var(--color-surface); border: 1px solid var(--color-border);
+           border-radius: var(--radius-lg); padding: 1.3rem 1.6rem; box-shadow: var(--shadow-sm); }
+    @media (max-width: 680px) { .eng { grid-template-columns: 1fr; gap: 0.4rem; } }
+    .eng-kind { font-weight: 600; font-size: 0.92rem; color: var(--color-primary); }
+    .eng p { font-size: 0.87rem; color: var(--color-text-muted); margin: 0; }
+
+    .cred-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.2rem; }
+    .cred { text-align: center; background: var(--color-surface); border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg); padding: 1.4rem 1rem; box-shadow: var(--shadow-sm); }
+    .cred .n { font-size: 1.7rem; font-weight: 700; color: var(--color-primary); line-height: 1.1; }
+    .cred .l { font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.3rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+    @media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    .form-card { background: var(--color-surface); border: 1px solid var(--color-border);
+                 border-radius: var(--radius-lg); padding: 1.8rem; box-shadow: var(--shadow-md); }
+    .form-row { margin-bottom: 1rem; }
+    .form-row label { display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .form-row input, .form-row select, .form-row textarea {
+      width: 100%; padding: 0.6rem 0.75rem; font-family: var(--font-sans); font-size: 0.9rem;
+      border: 1px solid var(--color-border); border-radius: var(--radius-sm);
+      background: var(--color-bg); color: var(--color-text); }
+    .form-row textarea { min-height: 7rem; resize: vertical; }
+    .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+      outline: 2px solid var(--color-primary-light); outline-offset: 1px; border-color: var(--color-primary); }
+    .form-card .btn { width: 100%; justify-content: center; margin-top: 0.4rem; }
+    .form-fine { font-size: 0.76rem; color: var(--color-text-muted); margin-top: 0.9rem; line-height: 1.5; }
+
+    .email-big { display: inline-block; font-size: 1.1rem; font-weight: 600; color: var(--color-primary);
+                 margin: 0.4rem 0 1.2rem; }
+    .email-big:hover { text-decoration: underline; }
+
+    .note-box { background: var(--color-surface); border-left: 3px solid var(--color-accent);
+                border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 1.1rem 1.3rem;
+                font-size: 0.87rem; color: var(--color-text-muted); margin-top: 2rem; }
+    .note-box strong { color: var(--color-text); }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Sudhir Shrestha, Ph.D.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="consulting">Consulting</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="consulting">Consulting</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Consulting</h1>
+    <p>Robotics, embedded AI, and sensing. I work with companies, institutions, and legal teams
+      that need a technical judgement they can rely on, from someone who builds these systems
+      rather than only writes about them.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <p class="lead">I direct the Intelligent Systems Lab at Sonoma State University, where my
+      students and I build robot manipulation systems, embedded sensing devices, and the machine
+      learning that runs on both. The lab runs ten robot stations with six-axis research arms and
+      the GPU hardware to train policies on them.</p>
+    <p class="lead">That work is the basis of what I consult on. I take a small number of
+      engagements where a specific technical problem needs depth rather than headcount, and where
+      being wrong is expensive: a sensing approach that will or will not reach the accuracy the
+      product claims, an automation plan that will or will not survive contact with a real line,
+      a patent whose claims need someone who can read both the mathematics and the circuit.</p>
+
+    <div class="cred-grid" style="margin-top:2.4rem;">
+      <div class="cred"><div class="n">7</div><div class="l">U.S. patents</div></div>
+      <div class="cred"><div class="n">35+</div><div class="l">Peer-reviewed publications</div></div>
+      <div class="cred"><div class="n">NSF</div><div class="l">Smart and Connected Health grant</div></div>
+      <div class="cred"><div class="n">IEEE</div><div class="l">Senior Member</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:rgba(27,58,92,0.03);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Areas of expertise</h2>
+      <p>Each of these is an area I publish and build in, not one I have read about.</p>
+    </div>
+
+    <div class="svc-grid">
+
+      <div class="svc">
+        <h3>Robotics and manipulation</h3>
+        <p>Robot arms that have to do real work in unstructured settings, from the kinematics
+          upward.</p>
+        <ul>
+          <li>Manipulator kinematics, Jacobians, and workspace analysis</li>
+          <li>Six-axis arm selection, integration, and ROS 2 deployment</li>
+          <li>Teleoperation and demonstration capture</li>
+          <li>Grasping, contact, and end-effector design</li>
+          <li>Feasibility review before a cell is bought or built</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>Robot learning</h3>
+        <p>Getting a policy from a dataset onto hardware, and knowing when that is the wrong
+          approach.</p>
+        <ul>
+          <li>Imitation learning and learning from demonstration</li>
+          <li>Reinforcement learning for manipulation</li>
+          <li>Sim-to-real transfer and the gap that remains</li>
+          <li>Vision-language-action systems</li>
+          <li>Honest assessment of what current methods will and will not do</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>Embedded systems and edge AI</h3>
+        <p>Inference and sensing on hardware with a power budget, where a cloud round trip is not
+          available.</p>
+        <ul>
+          <li>Microcontroller sensor platforms and RTOS design</li>
+          <li>On-device inference and model compression</li>
+          <li>Low-power and battery-constrained systems</li>
+          <li>Sensor fusion and signal conditioning</li>
+          <li>Data logging, telemetry, and cellular-connected devices</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>Biomedical sensing and health AI</h3>
+        <p>Measurement problems in health, including the non-invasive ones that are hard for good
+          physical reasons.</p>
+        <ul>
+          <li>Breath volatile organic compound sensing</li>
+          <li>Non-invasive physiological measurement</li>
+          <li>Wearable and at-home data collection devices</li>
+          <li>Study design and data pipelines for clinical collaboration</li>
+          <li>Machine learning on small, noisy biomedical datasets</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>Computer vision and perception</h3>
+        <p>Seeing well enough to act, which is a different requirement from scoring well on a
+          benchmark.</p>
+        <ul>
+          <li>Depth sensing, point clouds, and 3D registration</li>
+          <li>Camera calibration and hand-eye calibration</li>
+          <li>Deep learning for classification and detection</li>
+          <li>Medical image analysis</li>
+          <li>Visual servoing and closed-loop perception</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>RF and radar sensing</h3>
+        <p>Sensing through materials and in conditions where optical methods stop working.</p>
+        <ul>
+          <li>FMCW radar system design and signal processing</li>
+          <li>Through-wall and obscured-environment detection</li>
+          <li>Antenna and RF front-end review</li>
+          <li>Microwave and millimetre-wave measurement</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>Technical review and expert work</h3>
+        <p>Where the deliverable is a defensible opinion rather than a prototype.</p>
+        <ul>
+          <li>Patent and prior-art technical review</li>
+          <li>Expert witness and litigation support</li>
+          <li>Due diligence on technology claims for investors</li>
+          <li>Proposal and grant technical review</li>
+          <li>Independent assessment of a vendor's technical claims</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <h3>Education and workforce</h3>
+        <p>Building the capability inside an organisation rather than renting it.</p>
+        <ul>
+          <li>Workshops on robotics, ROS 2, and applied machine learning</li>
+          <li>Curriculum and lab design for institutions</li>
+          <li>Capstone project sponsorship and student pipelines</li>
+          <li>Technical training for engineering teams</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>How engagements work</h2>
+      <p>Four shapes cover nearly everything. If your problem does not fit one, say so and we
+        will find the right shape for it.</p>
+    </div>
+
+    <div class="eng-list">
+      <div class="eng">
+        <div class="eng-kind">Technical advisory</div>
+        <p>An ongoing relationship with a small, regular time commitment. Suited to a team that
+          wants a second opinion available as decisions come up, rather than a report at the
+          end.</p>
+      </div>
+      <div class="eng">
+        <div class="eng-kind">Project engagement</div>
+        <p>A scoped piece of work with a defined deliverable: a feasibility study, a prototype, a
+          system design, or an evaluation of an approach you are considering.</p>
+      </div>
+      <div class="eng">
+        <div class="eng-kind">Expert review</div>
+        <p>A written technical opinion for patent, litigation, due diligence, or procurement,
+          delivered to the standard that context requires.</p>
+      </div>
+      <div class="eng">
+        <div class="eng-kind">Training and workshops</div>
+        <p>Delivered at your site or in the lab, from a half-day introduction through a
+          multi-week programme for an engineering team.</p>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <strong>A note on availability and scope.</strong> My primary appointment is at Sonoma
+      State University, and consulting is undertaken consistently with university policy on
+      outside professional activity. I take on a limited number of engagements at a time, which
+      is deliberate: it is what lets each one get real attention.
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact" style="background:rgba(27,58,92,0.03);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Start a conversation</h2>
+      <p>Tell me the problem. The first conversation is free and is usually enough to establish
+        whether I am the right person for it.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <h3 style="font-size:1rem;margin-bottom:0.3rem;">Email directly</h3>
+        <a class="email-big" href="mailto:shrestsu@sonoma.edu?subject=Consulting%20enquiry">shrestsu@sonoma.edu</a>
+        <p style="font-size:0.88rem;color:var(--color-text-muted);max-width:46ch;">
+          If you prefer email, include what you are building, what decision is waiting on the
+          answer, and your timeline. That is enough for me to tell you quickly whether I can
+          help.</p>
+
+        <h3 style="font-size:1rem;margin:1.8rem 0 0.4rem;">Based in the North Bay</h3>
+        <p style="font-size:0.88rem;color:var(--color-text-muted);max-width:46ch;">
+          Sonoma State University, Rohnert Park, California. On site anywhere in Sonoma, Marin,
+          and Napa counties; remote anywhere else.</p>
+      </div>
+
+      <form class="form-card" id="consult-form" method="POST"
+            action="https://formsubmit.co/shrestsu@sonoma.edu">
+        <input type="hidden" name="_subject" value="Consulting enquiry via sudhirshrestha.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://sudhirshrestha.com/consulting-thanks">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off"
+               style="position:absolute;left:-9999px;" aria-hidden="true">
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-org">Organisation</label>
+          <input id="cf-org" name="organisation" type="text" autocomplete="organization">
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-area">Area</label>
+          <select id="cf-area" name="area">
+            <option>Robotics and manipulation</option>
+            <option>Robot learning</option>
+            <option>Embedded systems and edge AI</option>
+            <option>Biomedical sensing and health AI</option>
+            <option>Computer vision and perception</option>
+            <option>RF and radar sensing</option>
+            <option>Technical review or expert work</option>
+            <option>Training and workshops</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="cf-msg">What are you working on?</label>
+          <textarea id="cf-msg" name="message"
+            placeholder="What you are building, what decision is waiting on the answer, and your timeline." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send enquiry</button>
+        <div class="form-fine">
+          Goes straight to my university address. I reply to everything, usually within two
+          business days.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">Sudhir Shrestha, Ph.D.</div>
+        <div class="footer-tagline">Professor, Engineering and Computer Science Department · Sonoma State University</div>
+        <div class="footer-addr">
+          Salazar 2008B<br>
+          1801 East Cotati Avenue<br>
+          Rohnert Park, CA 94928<br>
+          shrestsu@sonoma.edu<br>
+          <a href="https://sonomaisl.ai" target="_blank" rel="noopener">sonomaisl.ai</a>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Site</h4>
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="consulting">Consulting</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sudhir Shrestha, Ph.D. · Sonoma State University</span>
+      <span>sudhirshrestha.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
