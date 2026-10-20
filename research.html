@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Sudhir Shrestha, Ph.D.</title>
-  <meta name="description" content="Research areas and projects — Sudhir Shrestha, Ph.D., Sonoma State University.">
+  <meta name="description" content="Research areas and projects of Sudhir Shrestha, Ph.D., Sonoma State University.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -45,7 +45,106 @@
 </section>
 
 <!-- BIOMEDICAL SENSING -->
-<section class="section" id="biomedical" style="background:var(--color-surface)">
+<section class="section" id="robotics" style="background:var(--color-surface)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Intelligent Robotics and Manipulation</h2>
+      <p>Sim-to-real transfer, imitation learning, and vision-guided robotic control</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">Sim-to-real transfer learning, reinforcement learning for robotic arms, imitation learning, and vision-guided control. Our robots learn from simulation and human demonstration, then operate on physical systems.</p>
+        <ul class="research-list">
+          <li><strong>Imitation learning for bimanual coordination</strong>: using Universal Manipulation Interface (UMI) to collect human demonstration data and train policies for two-arm handoff tasks.</li>
+          <li><strong>Sim-to-real reinforcement learning</strong>: training robot arm control policies in simulation (GR00T, PyBullet, IsaacGym) and transferring to real hardware with minimal real-world fine-tuning.</li>
+          <li><strong>Vision-Language-Action (VLA) systems</strong>: integrating large language models and visual perception for task-conditioned robot control.</li>
+          <li><strong>NLP-guided navigation</strong>: natural language command parsing for autonomous mobile robot navigation in indoor environments.</li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <a href="https://sonomaisl.ai" target="_blank" rel="noopener" class="btn btn-teal">Visit sonomaisl.ai →</a>
+        </div>
+      </div>
+      <div class="about-meta">
+        <h3>Platforms</h3>
+        <div class="edu-item"><div class="edu-degree">Trossen Robotics Arm</div></div>
+        <div class="edu-item"><div class="edu-degree">Universal Manipulation Interface (UMI)</div></div>
+        <div class="edu-item"><div class="edu-degree">ROS / ROS 2</div></div>
+        <div class="edu-item"><div class="edu-degree">GR00T, PyBullet, IsaacGym</div><div class="edu-inst">Simulation environments</div></div>
+        <h3 style="margin-top:1.5rem">Methods</h3>
+        <div class="edu-item"><div class="edu-degree">ACT / Diffusion Policy</div><div class="edu-inst">Imitation learning</div></div>
+        <div class="edu-item"><div class="edu-degree">PPO, SAC</div><div class="edu-inst">Reinforcement learning</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROBOTICS -->
+<section class="section" id="vision" style="background:var(--color-bg)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Computer Vision and Language-Guided Systems</h2>
+      <p>Deep learning for perception, medical imaging, and natural language robot control</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">This research thread bridges visual perception and language understanding to build autonomous systems capable of interpreting the world and acting on instructions:</p>
+        <ul class="research-list">
+          <li><strong>Medical image classification</strong>: deep learning models for diabetic retinopathy detection from fundus images, targeting resource-constrained clinical settings.</li>
+          <li><strong>Vision-Language-Action (VLA) integration</strong>: combining visual encoders and large language models to enable task-conditioned robot manipulation from natural language commands.</li>
+          <li><strong>Autonomous navigation via NLP</strong>: natural language command parsing for indoor mobile robot navigation, mapping instructions to motion planning in real environments.</li>
+          <li><strong>Object detection and tracking</strong>: real-time vision pipelines for robot arm manipulation, grasp planning, and workspace monitoring.</li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <a href="https://sonomaisl.ai" target="_blank" rel="noopener" class="btn btn-teal">Visit sonomaisl.ai →</a>
+        </div>
+      </div>
+      <div class="about-meta">
+        <h3>Tools and Frameworks</h3>
+        <div class="edu-item"><div class="edu-degree">PyTorch / TensorFlow</div><div class="edu-inst">Model training</div></div>
+        <div class="edu-item"><div class="edu-degree">OpenCV</div><div class="edu-inst">Vision pipelines</div></div>
+        <div class="edu-item"><div class="edu-degree">CLIP / LLaVA</div><div class="edu-inst">Vision-language models</div></div>
+        <h3 style="margin-top:1.5rem">Applications</h3>
+        <div class="edu-item"><div class="edu-degree">Diabetic retinopathy detection</div></div>
+        <div class="edu-item"><div class="edu-degree">Robot task planning</div></div>
+        <div class="edu-item"><div class="edu-degree">NLP-guided navigation</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROBOTICS -->
+<section class="section" id="embedded" style="background:var(--color-surface)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Embedded Systems and Edge AI</h2>
+      <p>Low-power sensor platforms and on-device machine intelligence</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem">A horizontal thread across all ISL projects: building the embedded hardware and firmware that deploys intelligent algorithms outside the lab, on constrained devices:</p>
+        <ul class="research-list">
+          <li><strong>Sensor acquisition systems</strong>: custom PCB designs for gas sensors, biosensors, and multi-modal arrays with analog front-end conditioning and ADC integration.</li>
+          <li><strong>RTOS-based firmware</strong>: FreeRTOS implementations on STM32, ESP32, and ARM Cortex-M platforms for real-time data acquisition and BLE/WiFi telemetry.</li>
+          <li><strong>TinyML / Edge inference</strong>: TensorFlow Lite and ONNX model deployment on microcontrollers for on-device classification and regression.</li>
+          <li><strong>Environmental monitoring</strong>: VOC, particulate matter, and CO₂ sensing networks for indoor air quality research.</li>
+        </ul>
+      </div>
+      <div class="about-meta">
+        <h3>Hardware</h3>
+        <div class="edu-item"><div class="edu-degree">STM32 / ESP32 / Raspberry Pi</div></div>
+        <div class="edu-item"><div class="edu-degree">Custom PCB design</div><div class="edu-inst">KiCad, Altium</div></div>
+        <div class="edu-item"><div class="edu-degree">TensorFlow Lite / Edge Impulse</div></div>
+        <h3 style="margin-top:1.5rem">Applications</h3>
+        <div class="edu-item"><div class="edu-degree">Wearable health monitors</div></div>
+        <div class="edu-item"><div class="edu-degree">Air quality networks</div></div>
+        <div class="edu-item"><div class="edu-degree">Robot sensor integration</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROBOTICS -->
+<section class="section" id="biomedical" style="background:var(--color-bg)">
   <div class="container">
     <div class="section-header">
       <h2>Biomedical Sensing and Health AI</h2>
@@ -55,9 +154,9 @@
       <div>
         <p style="color:var(--color-text-muted);margin-bottom:1rem">The central theme of this research thread is the non-invasive detection of disease biomarkers, particularly volatile organic compounds (VOCs) exhaled in human breath, as a painless alternative to finger prick-based diagnostics. Key efforts include:</p>
         <ul class="research-list">
-          <li><strong>Breath-based blood glucose monitoring</strong> — sensor arrays combined with machine learning to predict blood glucose levels from exhaled acetone and other VOC markers.</li>
-          <li><strong>Clinical data collection platforms</strong> — custom embedded platform for breath VOC data collection in the wild. The platform is IRB human-subject study compatible and has been tested and verified. The patented device and companion smart phone app transmits data to the researchers.</li>
-          <li><strong>On-device machine learning</strong> — lightweight ML models for real-time inference.</li>
+          <li><strong>Breath-based blood glucose monitoring</strong>: sensor arrays combined with machine learning to predict blood glucose levels from exhaled acetone and other VOC markers.</li>
+          <li><strong>Clinical data collection platforms</strong>: custom embedded platform for breath VOC data collection in the wild. The platform is IRB human-subject study compatible and has been tested and verified. The patented device and companion smart phone app transmits data to the researchers.</li>
+          <li><strong>On-device machine learning</strong>: lightweight ML models for real-time inference.</li>
         </ul>
         <div style="margin-top:1.5rem">
           <a href="https://sonomaisl.ai/research.html" target="_blank" rel="noopener" class="btn btn-teal">ISL Research Projects →</a>
@@ -78,105 +177,6 @@
           <div class="edu-degree">SSU Nursing</div>
           <div class="edu-inst">Human subject studies</div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ROBOTICS -->
-<section class="section" id="robotics" style="background:var(--color-bg)">
-  <div class="container">
-    <div class="section-header">
-      <h2>Intelligent Robotics and Manipulation</h2>
-      <p>Sim-to-real transfer, imitation learning, and vision-guided robotic control</p>
-    </div>
-    <div class="about-grid">
-      <div>
-        <p style="color:var(--color-text-muted);margin-bottom:1rem">Sim-to-real transfer learning, reinforcement learning for robotic arms, imitation learning, and vision-guided control. Our robots learn from simulation and human demonstration, then operate on physical systems.</p>
-        <ul class="research-list">
-          <li><strong>Imitation learning for bimanual coordination</strong> — using Universal Manipulation Interface (UMI) to collect human demonstration data and train policies for two-arm handoff tasks.</li>
-          <li><strong>Sim-to-real reinforcement learning</strong> — training robot arm control policies in simulation (GR00T, PyBullet, IsaacGym) and transferring to real hardware with minimal real-world fine-tuning.</li>
-          <li><strong>Vision-Language-Action (VLA) systems</strong> — integrating large language models and visual perception for task-conditioned robot control.</li>
-          <li><strong>NLP-guided navigation</strong> — natural language command parsing for autonomous mobile robot navigation in indoor environments.</li>
-        </ul>
-        <div style="margin-top:1.5rem">
-          <a href="https://sonomaisl.ai" target="_blank" rel="noopener" class="btn btn-teal">Visit sonomaisl.ai →</a>
-        </div>
-      </div>
-      <div class="about-meta">
-        <h3>Platforms</h3>
-        <div class="edu-item"><div class="edu-degree">Trossen Robotics Arm</div></div>
-        <div class="edu-item"><div class="edu-degree">Universal Manipulation Interface (UMI)</div></div>
-        <div class="edu-item"><div class="edu-degree">ROS / ROS 2</div></div>
-        <div class="edu-item"><div class="edu-degree">GR00T, PyBullet, IsaacGym</div><div class="edu-inst">Simulation environments</div></div>
-        <h3 style="margin-top:1.5rem">Methods</h3>
-        <div class="edu-item"><div class="edu-degree">ACT / Diffusion Policy</div><div class="edu-inst">Imitation learning</div></div>
-        <div class="edu-item"><div class="edu-degree">PPO, SAC</div><div class="edu-inst">Reinforcement learning</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EMBEDDED -->
-<section class="section" id="embedded" style="background:var(--color-surface)">
-  <div class="container">
-    <div class="section-header">
-      <h2>Embedded Systems and Edge AI</h2>
-      <p>Low-power sensor platforms and on-device machine intelligence</p>
-    </div>
-    <div class="about-grid">
-      <div>
-        <p style="color:var(--color-text-muted);margin-bottom:1rem">A horizontal thread across all ISL projects: building the embedded hardware and firmware that deploys intelligent algorithms outside the lab, on constrained devices:</p>
-        <ul class="research-list">
-          <li><strong>Sensor acquisition systems</strong> — custom PCB designs for gas sensors, biosensors, and multi-modal arrays with analog front-end conditioning and ADC integration.</li>
-          <li><strong>RTOS-based firmware</strong> — FreeRTOS implementations on STM32, ESP32, and ARM Cortex-M platforms for real-time data acquisition and BLE/WiFi telemetry.</li>
-          <li><strong>TinyML / Edge inference</strong> — TensorFlow Lite and ONNX model deployment on microcontrollers for on-device classification and regression.</li>
-          <li><strong>Environmental monitoring</strong> — VOC, particulate matter, and CO₂ sensing networks for indoor air quality research.</li>
-        </ul>
-      </div>
-      <div class="about-meta">
-        <h3>Hardware</h3>
-        <div class="edu-item"><div class="edu-degree">STM32 / ESP32 / Raspberry Pi</div></div>
-        <div class="edu-item"><div class="edu-degree">Custom PCB design</div><div class="edu-inst">KiCad, Altium</div></div>
-        <div class="edu-item"><div class="edu-degree">TensorFlow Lite / Edge Impulse</div></div>
-        <h3 style="margin-top:1.5rem">Applications</h3>
-        <div class="edu-item"><div class="edu-degree">Wearable health monitors</div></div>
-        <div class="edu-item"><div class="edu-degree">Air quality networks</div></div>
-        <div class="edu-item"><div class="edu-degree">Robot sensor integration</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPUTER VISION -->
-<section class="section" id="vision" style="background:var(--color-bg)">
-  <div class="container">
-    <div class="section-header">
-      <h2>Computer Vision and Language-Guided Systems</h2>
-      <p>Deep learning for perception, medical imaging, and natural language robot control</p>
-    </div>
-    <div class="about-grid">
-      <div>
-        <p style="color:var(--color-text-muted);margin-bottom:1rem">This research thread bridges visual perception and language understanding to build autonomous systems capable of interpreting the world and acting on instructions:</p>
-        <ul class="research-list">
-          <li><strong>Medical image classification</strong> — deep learning models for diabetic retinopathy detection from fundus images, targeting resource-constrained clinical settings.</li>
-          <li><strong>Vision-Language-Action (VLA) integration</strong> — combining visual encoders and large language models to enable task-conditioned robot manipulation from natural language commands.</li>
-          <li><strong>Autonomous navigation via NLP</strong> — natural language command parsing for indoor mobile robot navigation, mapping instructions to motion planning in real environments.</li>
-          <li><strong>Object detection and tracking</strong> — real-time vision pipelines for robot arm manipulation, grasp planning, and workspace monitoring.</li>
-        </ul>
-        <div style="margin-top:1.5rem">
-          <a href="https://sonomaisl.ai" target="_blank" rel="noopener" class="btn btn-teal">Visit sonomaisl.ai →</a>
-        </div>
-      </div>
-      <div class="about-meta">
-        <h3>Tools and Frameworks</h3>
-        <div class="edu-item"><div class="edu-degree">PyTorch / TensorFlow</div><div class="edu-inst">Model training</div></div>
-        <div class="edu-item"><div class="edu-degree">OpenCV</div><div class="edu-inst">Vision pipelines</div></div>
-        <div class="edu-item"><div class="edu-degree">CLIP / LLaVA</div><div class="edu-inst">Vision-language models</div></div>
-        <h3 style="margin-top:1.5rem">Applications</h3>
-        <div class="edu-item"><div class="edu-degree">Diabetic retinopathy detection</div></div>
-        <div class="edu-item"><div class="edu-degree">Robot task planning</div></div>
-        <div class="edu-item"><div class="edu-degree">NLP-guided navigation</div></div>
       </div>
     </div>
   </div>
